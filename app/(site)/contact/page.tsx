@@ -31,7 +31,7 @@ export default function ContactPage() {
       <div className="mx-auto max-w-2xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
         <p className="mt-2 text-lg leading-8 text-gray-600">
-          Fill out the form below to get in touch with us. We'll get back to you as soon as possible.
+          Fill out the form below to get in touch with us. We'll get back to you as soon as possible!
         </p>
       </div>
       <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20"style={{pointerEvents: 'auto'}} >
