@@ -74,9 +74,3 @@
     @apply bg-background text-foreground;
   }
 }
-
-@layer base {
-  button {
-    @apply bg-orange-500
-  }
-}

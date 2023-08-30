@@ -7,6 +7,8 @@ import { cn } from "@/lib/utils";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrClose } from "react-icons/gr";
 import { useState, useEffect } from "react";
+import { AiFillInstagram } from "react-icons/ai";
+import { RiFacebookBoxFill } from "react-icons/ri";
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 
@@ -56,9 +58,11 @@ const Navbar = () => {
           </ul>
         </div>
         <div>
+          <Link href="/contact">
           <button className="font-semibold text-white bg-[#F68800] hover:bg-[#F68800]/60 p-2 rounded-md">
             Contact Us
           </button>
+          </Link>
         </div>
       </nav>
       {/* Mobile Menu */}
@@ -66,15 +70,15 @@ const Navbar = () => {
         <Image src="/marketinglogo.png" alt="logo" width={160} height={160} />
         <GiHamburgerMenu
           onClick={() => setShowMenu(true)}
-          className="text-3xl ml-auto"
+          className="text-3xl ml-auto z-10"
         />
         {showMenu && (
-          <div className="absolute z-10 top-0 left-0 w-full h-screen bg-black/60 backdrop-blur flex flex-col items-center justify-center">
+          <div className="absolute top-0 left-0 w-full h-screen z-20 bg-white backdrop-blur flex flex-col items-center justify-center">
             <GrClose
               onClick={() => setShowMenu(false)}
-              className="absolute top-10 right-10 text-3xl ml-auto transition-shadow"
+              className="absolute top-10 right-10 text-3xl text-black ml-auto transition-shadow"
             />
-            <ul className="flex flex-col text-white font-semibold gap-6 cursor-pointer">
+            <ul className="flex flex-col text-black text-center font-semibold gap-6 cursor-pointer">
               <Link href="/">
                 <li onClick={() => setShowMenu(false)}>Home</li>
               </Link>
@@ -102,6 +106,10 @@ const Navbar = () => {
                 Contact Us
               </button>
             </Link>
+            <div className="flex flex-row gap-4 mt-8">
+            <AiFillInstagram className="text-3xl mt-8 hover:text-black/70" />
+            <RiFacebookBoxFill className="text-3xl mt-8 hover:text-black/70" />
+            </div>
           </div>
         )}
       </nav>
