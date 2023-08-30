@@ -3,7 +3,7 @@ import YouTubeBanner from "@/public/youtubebanner.png";
 import { cn } from "@/lib/utils";
 import { Montserrat } from "next/font/google";
 import YouTubeScreenshot from "@/public/youtubescreenshot.png";
-import AppliancePlugStats from "@/public/applianceplugstats.png";
+import AppliancePlugStats from "@/public/AppliancePlugStats.png";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import blob1 from "@/public/blob1.png";
