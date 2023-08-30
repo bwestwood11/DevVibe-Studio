@@ -22,7 +22,7 @@ const ClientReviews = () => {
               </p>
             </div>
             <Image
-              src="/user1.png"
+              src="/google-icon-review.png"
               alt="user1"
               width={40}
               height={40}
@@ -48,7 +48,7 @@ const ClientReviews = () => {
               </p>
             </div>
             <Image
-              src="/user2.png"
+              src="/google-icon-review.png"
               alt="user1"
               width={40}
               height={40}
@@ -70,7 +70,7 @@ const ClientReviews = () => {
               </p>
             </div>
             <Image
-              src="/user3.png"
+              src="/google-icon-review.png"
               alt="user1"
               width={40}
               height={40}

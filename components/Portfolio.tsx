@@ -7,7 +7,7 @@ const montserrat = Montserrat({ subsets: ['latin'] })
 
 const Portfolio = () => {
   return (
-    <div className="h-[600px] max-w-6xl mx-auto relative w-full flex justify-center items-center align-middle">
+    <div className="h-[600px] max-w-6xl mx-auto relative w-full flex bg-[#F3F4F6] justify-center items-center align-middle">
         <h1 className={cn(styles.text, "drop-shadow-2xl z-10 text-center text-white text-6xl sm:text-[90px] font-extrabold")}>Our <span className="text-[#F68800]">
            Portfolio </span></h1>
            <Image

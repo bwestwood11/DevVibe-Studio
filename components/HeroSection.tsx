@@ -84,7 +84,13 @@ const HeroSection = () => {
                 </DialogDescription>
               </DialogHeader>
               <div className="mx-auto justify-center">
-                <Video id="ny9T62gqrWg"/>
+                <iframe
+                  src="https://player.vimeo.com/video/859534213?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  width="600"
+                  height="400"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  title="LaborDaySale Video"
+                ></iframe>
               </div>
             </DialogContent>
           </Dialog>

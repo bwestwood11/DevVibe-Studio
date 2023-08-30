@@ -51,6 +51,13 @@ const AppliancePlugPage = () => {
                   height={1000}
                   className="sm:mt-24 shadow-2xl shadow-gray-500 rounded-lg border border-gray-300"
                 />
+                {/* <iframe
+                  src="https://player.vimeo.com/video/859534213?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  width="600"
+                  height="400"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  title="LaborDaySale Video"
+                ></iframe> */}
               </div>
             </div>
             <div className="basis-1/2 text-left sm:px-16 z-10">

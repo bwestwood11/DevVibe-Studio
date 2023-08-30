@@ -67,7 +67,9 @@ const Navbar = () => {
       </nav>
       {/* Mobile Menu */}
       <nav className="w-full h-[90px] flex items-center sm:hidden justify-between px-5">
+        <Link href="/">
         <Image src="/marketinglogo.png" alt="logo" width={160} height={160} />
+        </Link>
         <GiHamburgerMenu
           onClick={() => setShowMenu(true)}
           className="text-3xl ml-auto z-10"
