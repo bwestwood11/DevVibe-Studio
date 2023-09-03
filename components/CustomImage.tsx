@@ -6,6 +6,7 @@ type Props = {
   priority?: string;
 };
 
+// Images for the blog posts
 export default function CustomImage({ src, alt, priority }: Props) {
   const prty = priority ? true : false;
   return (

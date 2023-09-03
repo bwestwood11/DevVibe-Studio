@@ -9,6 +9,15 @@ import { GrClose } from "react-icons/gr";
 import { useState, useEffect } from "react";
 import { AiFillInstagram } from "react-icons/ai";
 import { RiFacebookBoxFill } from "react-icons/ri";
+import {
+  DropdownMenu,
+  DropdownMenuCheckboxItem,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+  DropdownMenuItem
+} from "@/components/ui/dropdown-menu"
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 
@@ -40,14 +49,38 @@ const Navbar = () => {
             <Link href="/">
               <li className="hover:text-black/60">Home</li>
             </Link>
-            <Link href="/services">
-              <li className="hover:text-black/60">Our Services</li>
-            </Link>
+            <DropdownMenu>
+      <DropdownMenuTrigger asChild>
+              <li className="hover:text-black/60">Services</li>
+            </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56 mt-6 z-[100]">
+        <DropdownMenuLabel>Services</DropdownMenuLabel>
+        <DropdownMenuSeparator />
+        <Link href="/website-development">
+        <DropdownMenuItem
+        >
+          Website Development
+        </DropdownMenuItem>
+        </Link>
+        <DropdownMenuItem
+        
+        >
+          Website Design
+        </DropdownMenuItem>
+        <DropdownMenuItem
+        >
+          Google SEO
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+      </DropdownMenu>
             <Link href="/portfolio">
               <li className="hover:text-black/60">Portfolio</li>
             </Link>
             <Link href="/about">
               <li className="hover:text-black/60">About Us</li>
+            </Link>
+            <Link href="/how-it-works">
+              <li className="hover:text-black/60">How It Works</li>
             </Link>
             <Link href="/contact">
               <li className="hover:text-black/60">Contact Us</li>
@@ -84,9 +117,10 @@ const Navbar = () => {
               <Link href="/">
                 <li onClick={() => setShowMenu(false)}>Home</li>
               </Link>
+        
               <Link href="/services">
-                <li onClick={() => setShowMenu(false)}>Our Services</li>
-              </Link>
+                <li onClick={() => setShowMenu(false)}>Services</li>
+                </Link>    
               <Link href="/portfolio">
                 <li onClick={() => setShowMenu(false)}>Portfolio</li>
               </Link>

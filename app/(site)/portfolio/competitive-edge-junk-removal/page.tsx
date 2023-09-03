@@ -6,6 +6,7 @@ import { Montserrat } from "next/font/google";
 import blob1 from "@/public/blob1.png";
 import { Badge } from "@/components/ui/badge";
 import PricingPage from "@/public/PricingPageImg.png";
+import JunkRemovalMockup from "@/public/junkremovalmockup.png";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -39,17 +40,16 @@ const CompetitiveEdgeJunkRemoval = () => {
           width={300}
           height={300}
        
-          className="absolute sm:right-[-70px] sm:top-0 top-[760px] right-[-140px] z-0"
+          className="absolute sm:right-[-70px] sm:top-0 hidden z-0"
           />
           <div
-            className="max-w-7xl mx-auto flex sm:flex-row flex-col mt-20"
+            className="max-w-[1440px] mx-auto flex sm:flex-row flex-col mt-20"
             
           >
-            <div className="basis-1/2 overflow-auto">
-              <h2 className={cn(montserrat.className, "font-bold text-xl text-center pb-4")}>Competitive Edge Dumpsters Home Page</h2>
-            <div className="h-[590px] overflow-y-scroll shadow-2xl shadow-gray-500 rounded-lg border border-gray-300">
+            <div className="basis-1/2 sm:px-16">
+            <div className="shadow-2xl mt-10 mb-10 sm:mb-0 shadow-gray-500 rounded-lg border border-gray-300">
               <Image
-                src={homepagejunkremoval}
+                src={JunkRemovalMockup}
                 alt="analytics"
                 width={1000}
                 height={1000}
@@ -88,7 +88,7 @@ const CompetitiveEdgeJunkRemoval = () => {
                 helped them rank higher on Google and is part of the maintenance plan we have with them.
               </p>
             </div>
-            <div className="basis-1/2">
+            <div className="basis-1/2 sm:px-16">
               <Image
                 src={PricingPage}
                 alt="analytics"

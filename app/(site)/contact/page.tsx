@@ -3,7 +3,8 @@
 import { useState } from 'react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { Switch } from '@headlessui/react'
-import { Metadata } from 'next'
+
+import {toast} from 'react-hot-toast';
 
 function classNames(...classes: any[]) {
   return classes.filter(Boolean).join(' ')
@@ -13,6 +14,44 @@ function classNames(...classes: any[]) {
 
 export default function ContactPage() {
   const [agreed, setAgreed] = useState(false)
+  const [data, setData] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: '',
+  });
+
+  const handleContactForm = async (e: any) => {
+    e.preventDefault();
+   
+
+    if(!data.firstName || !data.lastName || !data.email || !data.phone || !data.company || !data.message) {
+      toast.error('Please fill out all fields before submitting the form.')
+      return;
+    } 
+    
+    if (!agreed) {
+      toast.error('Please agree to our privacy policy before submitting the form.')
+      return;
+    }
+
+   
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+
+   const information = await res.json();
+
+   toast.success('Your message has been sent! We will get back to you as soon as possible.')
+
+
+  }
 
   return (
     <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8" style={{pointerEvents: 'none'}}>
@@ -34,7 +73,7 @@ export default function ContactPage() {
           Fill out the form below to get in touch with us. We'll get back to you as soon as possible!
         </p>
       </div>
-      <form action="#" method="POST" className="mx-auto mt-16 max-w-xl sm:mt-20"style={{pointerEvents: 'auto'}} >
+      <form onSubmit={handleContactForm} className="mx-auto mt-16 max-w-xl sm:mt-20"style={{pointerEvents: 'auto'}} >
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
@@ -45,6 +84,8 @@ export default function ContactPage() {
                 type="text"
                 name="first-name"
                 id="first-name"
+                value={data.firstName}
+                onChange={(e) => setData({...data, firstName: e.target.value})}
                 autoComplete="given-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
@@ -59,6 +100,8 @@ export default function ContactPage() {
                 type="text"
                 name="last-name"
                 id="last-name"
+                value={data.lastName}
+                onChange={(e) => setData({...data, lastName: e.target.value})}
                 autoComplete="family-name"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
@@ -73,6 +116,8 @@ export default function ContactPage() {
                 type="text"
                 name="company"
                 id="company"
+                value={data.company}
+                onChange={(e) => setData({...data, company: e.target.value})}
                 autoComplete="organization"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
@@ -87,6 +132,8 @@ export default function ContactPage() {
                 type="email"
                 name="email"
                 id="email"
+                value={data.email}
+                onChange={(e) => setData({...data, email: e.target.value})}
                 autoComplete="email"
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
@@ -119,6 +166,8 @@ export default function ContactPage() {
                 type="tel"
                 name="phone-number"
                 id="phone-number"
+                value={data.phone}
+                onChange={(e) => setData({...data, phone: e.target.value})}
                 autoComplete="tel"
                 className="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
               />
@@ -132,6 +181,8 @@ export default function ContactPage() {
               <textarea
                 name="message"
                 id="message"
+                value={data.message}
+                onChange={(e) => setData({...data, message: e.target.value})}
                 rows={4}
                 className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-orange-500 sm:text-sm sm:leading-6"
                 defaultValue={''}

@@ -1,3 +1,5 @@
+"use client"
+
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Source_Sans_3 } from "next/font/google";
@@ -14,7 +16,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import Video from "./Video";
+import Typed from 'react-typed'
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -41,15 +43,27 @@ const HeroSection = () => {
         className={cn(montserrat.className, "basis-1/2 flex flex-col gap-8")}
       >
         <div className="flex">
-          <h1 className="font-extrabold leading-tight text-5xl tracking-wide text-[#F68800]">
-            An Agency That Specializes in Web Development
+          <h1 className="font-extrabold leading-tight text-5xl tracking-wide bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+            An Agency That Specializes
+            <br />
+            <Typed
+            strings={[
+              "in Web Development",
+              "in Web Design",
+              "in Local SEO"
+            ]}
+            typeSpeed={150}
+            backSpeed={100}
+            loop
+            className="text-[#041620] text-5xl font-extrabold leading-tight tracking-wide"
+            />
           </h1>
         </div>
-        <p className={cn(sans.className, "text-[#041620] text-xl")}>
+        <h2 className={cn(sans.className, "text-[#041620] text-xl")}>
           Boost your online presence with our expert web development agency. We
           specialize in creating stunning websites that drive traffic and
           increase conversions.
-        </p>
+        </h2>
 
         {/* Button only appears on mobile version */}
         <button className="flex items-center gap-2 sm:hidden bg-black  text-white text-lg uppercase font-bold p-3 w-1/2 rounded-lg">
@@ -72,7 +86,7 @@ const HeroSection = () => {
                 Video
               </Button>
             </DialogTrigger>
-            <DialogContent>
+            <DialogContent className="w-full max-w-3xl mx-auto">
               <DialogHeader>
                 <DialogTitle className="text-center font-bold">
                   Who We Are

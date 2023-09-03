@@ -39,7 +39,7 @@ const AppliancePlugPage = () => {
           width={300}
           height={300}
        
-          className="absolute sm:right-[-70px] sm:top-0 top-[760px] right-[-140px] z-[-10]"
+          className="absolute sm:right-[-70px] hidden sm:top-0 z-[-10]"
           />
           <div className="max-w-7xl mx-auto flex sm:flex-row flex-col mt-20">
             <div className="basis-1/2">

@@ -5,11 +5,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { CrispProvider } from "@/components/crisp-provider";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
+import Header from "@/components/Header";
+import ToastProvider from "@/components/ToastProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Competitive Edge Marketing",
+  title: "Competitive Edge Marketing | Web Design | Web Development",
   description:
     "Marketing Agency specializing in Web Design, Web Development and Content Creation",
 };
@@ -22,8 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <CrispProvider />
+      
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body className={inter.className}>
+        <ToastProvider />
+        <Header />
         <Navbar />
         {children}
         <Footer />
