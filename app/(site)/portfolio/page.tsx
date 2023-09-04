@@ -4,13 +4,13 @@ import Projects from "@/components/Projects";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Portfolio | Competitive Edge Marketing',
-    description: 'Check out our portfolio of websites we have built for our clients.',
+    title: 'Portfolio | Competitive Edge Digital',
+    description: 'Portfolio of websites we have built for our clients.',
     }
 
 const PortfolioPage = () => {
   return (
-    <div className="w-full">
+    <div className="w-full h-full">
          <div className="bg-gray-50 h-screen">
            <div className="relative bg-cover bg-center w-screen h-[50vh] flex justify-center items-center">
            <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-t from-black to-transparent z-10" />

@@ -22,8 +22,8 @@ const Header = () => {
     <div
       className={
         shadow
-          ? "fixed top-0 bg-[#F68800] h-6 w-full flex items-center justify-center text-center py-4 px-4 z-[100]"
-          : "bg-[#F68800] h-6 w-full flex items-center justify-center text-center py-4 px-4"
+          ? "fixed top-0 bg-orange-500 h-6 w-full flex items-center justify-center text-center py-4 px-4 z-[100]"
+          : "bg-orange-500 h-6 w-full flex items-center justify-center text-center py-4 px-4"
       }
     >
       <a
@@ -36,9 +36,8 @@ const Header = () => {
         </p>
       </a>
       <a href="tel:+18134998379" className="flex items-center">
-        <p className="text-white mr-3">Call Today</p>
         <AiFillPhone className="text-white text-xl flex mr-2" />{" "}
-        <p className="text-white"> (813) 499-8379 </p>
+        <p className="text-white hover:text-white/70"> (813) 499-8379 </p>
       </a>
     </div>
   );

@@ -4,18 +4,18 @@ import Features from "@/components/Features";
 import HeroSection from "@/components/HeroSection";
 import Portfolio from "@/components/Portfolio";
 import SkillSection from "@/components/SkillSection";
-
-
+import Carousel from "@/components/Swiper";
 
 export default function Home() {
   return (
     <div>
-      <HeroSection  />
+      <HeroSection />
       <SkillSection />
-      <ClientReviews  />
+      <ClientReviews />
+      <Carousel />
       <Features />
       <Portfolio />
       <FAQ />
     </div>
-  )
+  );
 }

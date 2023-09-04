@@ -57,17 +57,19 @@ const Navbar = () => {
         <DropdownMenuLabel>Services</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <Link href="/website-development">
-        <DropdownMenuItem
+        <DropdownMenuItem 
+        className="cursor-pointer hover:bg-gray-100"
         >
           Website Development
         </DropdownMenuItem>
         </Link>
         <DropdownMenuItem
-        
+        className="cursor-pointer hover:bg-gray-100"
         >
           Website Design
         </DropdownMenuItem>
         <DropdownMenuItem
+        className="cursor-pointer hover:bg-gray-100"
         >
           Google SEO
         </DropdownMenuItem>
@@ -92,7 +94,7 @@ const Navbar = () => {
         </div>
         <div>
           <Link href="/contact">
-          <button className="font-semibold text-white bg-[#F68800] hover:bg-[#F68800]/60 p-2 rounded-md">
+          <button className="font-semibold text-white bg-orange-500 hover:bg-orange-500/60 p-2 rounded-md">
             Contact Us
           </button>
           </Link>
@@ -127,6 +129,9 @@ const Navbar = () => {
               <Link href="/about">
                 <li onClick={() => setShowMenu(false)}>About Us</li>
               </Link>
+              <Link href="/how-it-works">
+                <li onClick={() => setShowMenu(false)}>How It Works</li>
+              </Link>
               <Link href="/contact">
                 <li onClick={() => setShowMenu(false)}>Contact Us</li>
               </Link>
@@ -137,7 +142,7 @@ const Navbar = () => {
             <Link href="/contact">
               <button
                 onClick={() => setShowMenu(false)}
-                className="font-semibold text-white bg-[#F68800] p-2 mt-8 rounded-md"
+                className="font-semibold text-white bg-orange-500 p-2 mt-8 rounded-md"
               >
                 Contact Us
               </button>

@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 const SkillSection = () => {
   return (
-    <div className="mx-auto bg-black w-full sm:h-20 h-[210px] items-center">
+    <div className="mx-auto bg-black w-full mt-[-40px] sm:mt-0 sm:h-24 h-[210px] items-center">
       <div
         className={cn(
           styles["animate-marquee"],
@@ -14,31 +14,31 @@ const SkillSection = () => {
         <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:mt-0 sm:flex justify-center items-center rounded-md">
           <div className="p-3">
             <Image
-              src="/Group.png"
-              alt="group"
-              width={150}
-              height={100}
-              className="mx-auto"
-            />
-          </div>
-        </div>
-        <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
-          <div className="p-3">
-            <Image
-              src="/wordpress.png"
-              alt="group"
-              width={150}
-              height={100}
-              className="mx-auto"
-            />
-          </div>
-        </div>
-        <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
-          <div className="p-3">
-            <Image
               src="/react.png"
               alt="group"
-              width={100}
+              width={140}
+              height={100}
+              className="mx-auto"
+            />
+          </div>
+        </div>
+        <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
+          <div className="p-3">
+            <Image
+              src="/figma.png"
+              alt="group"
+              width={90}
+              height={100}
+              className="mx-auto"
+            />
+          </div>
+        </div>
+        <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
+          <div className="p-3">
+            <Image
+              src="/Group.png"
+              alt="group"
+              width={110}
               height={100}
               className="mx-auto"
             />
@@ -47,20 +47,20 @@ const SkillSection = () => {
         <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
           <div className="p-2">
             <Image
-              src="/figma.png"
+              src="/nextjs.png"
               alt="group"
-              width={100}
+              width={70}
               height={100}
               className="mx-auto"
             />
           </div>
         </div>
-        <div className="bg-white hidden sm:w-3/4 w-1/2 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
+        <div className="bg-white mx-auto hidden sm:w-3/4 w-1/2 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
           <div className="p-3">
             <Image
-              src="/webflow.png"
+              src="/wordpress.png"
               alt="group"
-              width={100}
+              width={120}
               height={100}
               className="mx-auto"
             />

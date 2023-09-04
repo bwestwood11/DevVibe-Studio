@@ -16,14 +16,18 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import Typed from 'react-typed'
+import Typed from 'react-typed';
+import { useRouter } from "next/navigation";
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const HeroSection = () => {
+ 
+  const router = useRouter();
+
   return (
-    <div className="max-w-6xl bg-[##F3F4F6] relative mx-auto h-screen sm:h-[660px] sm:flex sm:flex-row flex-col sm:pt-[88px] pt-[60px] px-5">
+    <div className="max-w-6xl relative mx-auto h-screen sm:h-[660px] sm:flex sm:flex-row flex-col sm:pt-[88px] pt-[60px] px-5">
       {/* Blur Effect in background on mobile devices only */}
       <div
         className="absolute block sm:hidden inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -66,7 +70,7 @@ const HeroSection = () => {
         </h2>
 
         {/* Button only appears on mobile version */}
-        <button className="flex items-center gap-2 sm:hidden bg-black  text-white text-lg uppercase font-bold p-3 w-1/2 rounded-lg">
+        <button onClick={() => router.push('/contact')} className="flex items-center gap-2 sm:hidden bg-black  text-white text-lg uppercase font-bold p-3 w-1/2 rounded-lg">
           Contact Us
           <BsArrowDownRight className="inline-block" />
         </button>
@@ -167,7 +171,7 @@ const HeroSection = () => {
             </p>
           </div>
         </div>
-        <button className="bg-black hover:bg-black/60 z-[100] cursor-pointer mt-16 mx-16 text-white text-2xl uppercase font-bold p-3 w-1/2 rounded-lg">
+        <button className="bg-black z-[100] mt-16 mx-16 text-white text-2xl uppercase font-bold p-3 w-1/2 rounded-lg">
           Explore More
           <BsArrowDownRight className="inline-block ml-2" />
         </button>

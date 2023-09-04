@@ -7,7 +7,7 @@ import {
 
 const FAQ = () => {
   return (
-    <main className="w-full bg-gray-50 px-4 pt-10 sm:py-20 text-center flex">
+    <main className="w-full bg-gray-50 px-4 pt-20 sm:py-20 text-left flex">
         <div className="max-w-6xl mx-auto">
            <h2 className="font-bold text-2xl tracking-tight mb-4">Frequently Asked Questions</h2>
      <Accordion className="w-full text-gray-900 max-w-2xl" type="single" collapsible>
@@ -30,15 +30,15 @@ const FAQ = () => {
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-4">
-    <AccordionTrigger>How do we handle the web hosting and domain purchase? </AccordionTrigger>
+    <AccordionTrigger className="text-left">How do we handle the web hosting and domain purchase? </AccordionTrigger>
     <AccordionContent>
       The web hosting and domain purchase is handled by the client. These two costs are usually less than $100 per year and can be purchased from GoDaddy or Namecheap. We can help you with this process if needed, but since they are yearly purchases, we recommend that you purchase them yourself.  
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-5">
-    <AccordionTrigger>What technology do you use to create the website?</AccordionTrigger>
+    <AccordionTrigger className="text-left">What technology do you use to create the website?</AccordionTrigger>
     <AccordionContent>
-      The technology we prefer to use is Next.js. This allows us to customize the website to your needs and create a fast and responsive website. We could use Wordpress or Shopify if you prefer, but we recommend Next.js since this is a framework that allows us to actually code the website and not just use a template.   
+      The technology we prefer to use is Next.js. This allows us to customize the website to your needs and create a fast and responsive website. We could use Wordpress or Shopify if you prefer, but we recommend Next.js since this is a framework that allows us to actually code the website and not use a drag and drop website builder.   
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-6">
@@ -48,7 +48,7 @@ const FAQ = () => {
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-7">
-    <AccordionTrigger>Do the clients provide the images and copy or does Competitive Edge Digital?</AccordionTrigger>
+    <AccordionTrigger className="text-left">Do the clients provide the images and copy or does Competitive Edge Digital?</AccordionTrigger>
     <AccordionContent>
         The client usually provides the images and copy. We can help you with this process if needed and can provide editing services for pictures/videos for an additional fee.
     </AccordionContent>
@@ -57,6 +57,12 @@ const FAQ = () => {
     <AccordionTrigger>What if I already have a website?</AccordionTrigger>
     <AccordionContent>
         We can either edit and optimize your current website or create a new website. While the new website will be more expensive, it will be more optimized for SEO and will be faster.
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="item-9">
+    <AccordionTrigger>Is a payment system included in our website?</AccordionTrigger>
+    <AccordionContent>
+        Yes, we can integrate a payment system into your website. We can use Stripe to accept payments either for one-time purchases or even monthly memberships.
     </AccordionContent>
   </AccordionItem>
 </Accordion>

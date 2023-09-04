@@ -40,11 +40,11 @@ const features = [
   
   export default function Features() {
     return (
-      <div className="bg-[#F3F4F6] py-28">
+      <div className="bg-[#F3F4F6] sm:py-28 py-14">
         <div className="mx-auto max-w-md px-6 text-center sm:max-w-3xl lg:max-w-7xl lg:px-8">
-          <h2 className="text-lg font-semibold text-[#F68800]">Features</h2>
-          <p className="mt-10 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
-            Our Special <span className='text-[#F68800]'>Features</span>
+          <h2 className="text-lg font-semibold text-orange-500">Features</h2>
+          <p className="sm:mt-10 mt-3 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-5xl">
+            Our Special <span className='text-orange-500'>Features</span>
           </p>
           <div className="mt-20">
             <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
@@ -53,7 +53,7 @@ const features = [
                   <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
                     <div className="-mt-6">
                       <div>
-                        <span className="inline-flex items-center justify-center rounded-xl bg-[#F68800] p-3 shadow-lg">
+                        <span className="inline-flex items-center justify-center rounded-xl bg-orange-500 p-3 shadow-lg">
                           <feature.icon className="h-8 w-8 text-white" aria-hidden="true" />
                         </span>
                       </div>
