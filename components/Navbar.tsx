@@ -63,16 +63,20 @@ const Navbar = () => {
           Website Development
         </DropdownMenuItem>
         </Link>
+        <Link href="/website-design">
         <DropdownMenuItem
         className="cursor-pointer hover:bg-gray-100"
         >
           Website Design
         </DropdownMenuItem>
+        </Link>
+        <Link href='google-seo'>
         <DropdownMenuItem
         className="cursor-pointer hover:bg-gray-100"
         >
           Google SEO
         </DropdownMenuItem>
+        </Link>
       </DropdownMenuContent>
       </DropdownMenu>
             <Link href="/portfolio">
@@ -103,7 +107,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <nav className="w-full h-[90px] flex items-center sm:hidden justify-between px-5">
         <Link href="/">
-        <Image src="/marketinglogo.png" alt="logo" width={160} height={160} />
+        <Image src="/marketinglogo.png" alt="logo" width={200} height={200} />
         </Link>
         <GiHamburgerMenu
           onClick={() => setShowMenu(true)}
