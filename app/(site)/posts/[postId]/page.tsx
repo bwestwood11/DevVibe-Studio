@@ -53,10 +53,10 @@ export default async function Post({ params: { postId } }: Props) {
   ));
 
   return (
-    <main className="px-6 max-w-6xl prose prose-xl prose-slate dark:prose-invert pt-24 mx-auto">
-      <h1 className="text-3xl text-center font-bold mt-4 mb-0">{meta.title}</h1>
-      <p className="mt-2 text-center">{pubDate}</p>
-      <article className="mt-4 text-center">{content}</article>
+    <main className="px-6 max-w-4xl prose prose-xl prose-slate dark:prose-invert pt-24 mx-auto">
+      <h1 className="text-3xl font-bold mt-4 mb-0">{meta.title}</h1>
+      <p className="mt-2">{pubDate}</p>
+      <article className="mt-4">{content}</article>
       <section>
         <h3>Related:</h3>
         <div className="flex flex-row gap-4">{tags}</div>

@@ -36,16 +36,16 @@ export default function Carousel() {
         className="max-w-2xl mx-auto "
       >
         <SwiperSlide>
-          <Image src='/junkremovalmockup.png' alt='website development' width={2000} height={4000} />
+          <Image src='/junkremovalmockup.png' alt='website development' priority width={2000} height={4000} />
         </SwiperSlide>
         <SwiperSlide>
-        <Image src='/constructionmockup.png' alt='website development' width={2000} height={4000} />
+        <Image src='/constructionmockup.png' alt='website development' priority width={2000} height={4000} />
         </SwiperSlide>
         <SwiperSlide>
-        <Image src='/roofingmockup.png' alt='img' width={2000} height={4000} />
+        <Image src='/roofingmockup.png' alt='img' priority width={2000} height={4000} />
         </SwiperSlide>
         <SwiperSlide>
-        <Image src='/cleanermockup.png' alt='img' width={2000} height={4000} />
+        <Image src='/cleanermockup.png' alt='img' priority width={2000} height={4000} />
         </SwiperSlide>
       </Swiper>
     </div>
