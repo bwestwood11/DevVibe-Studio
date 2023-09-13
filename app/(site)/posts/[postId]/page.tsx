@@ -53,10 +53,11 @@ export default async function Post({ params: { postId } }: Props) {
   ));
 
   return (
-    <main className="px-6 max-w-4xl prose prose-xl prose-slate dark:prose-invert pt-24 mx-auto">
+    <main className="px-6 bg-gray-50 w-full prose prose-xl prose-slate dark:prose-invert pt-16">
+      <div className="max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mt-4 mb-0">{meta.title}</h1>
-      <p className="mt-2">{pubDate}</p>
-      <article className="mt-4">{content}</article>
+      <p className="mt-2 font-medium">{pubDate}</p>
+      <article className="mt-4 text-gray-900 leading-7 tracking-wide">{content}</article>
       <section>
         <h3>Related:</h3>
         <div className="flex flex-row gap-4">{tags}</div>
@@ -64,6 +65,7 @@ export default async function Post({ params: { postId } }: Props) {
       <p>
         <Link href="/blog">Back to blog</Link>
       </p>
+      </div>
     </main>
   );
 }
