@@ -15,7 +15,7 @@ const SkillSection = () => {
           <div className="p-3">
             <Image
               src="/react.png"
-              alt="group"
+              alt="react"
               width={140}
               height={100}
               className="mx-auto"
@@ -26,7 +26,7 @@ const SkillSection = () => {
           <div className="p-3">
             <Image
               src="/figma.png"
-              alt="group"
+              alt="figma"
               width={90}
               height={100}
               className="mx-auto"
@@ -36,8 +36,8 @@ const SkillSection = () => {
         <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
           <div className="p-3">
             <Image
-              src="/Group.png"
-              alt="group"
+              src="/shopify.png"
+              alt="shopify"
               width={110}
               height={100}
               className="mx-auto"
@@ -48,7 +48,7 @@ const SkillSection = () => {
           <div className="p-2">
             <Image
               src="/nextjs.png"
-              alt="group"
+              alt="nextjs"
               width={70}
               height={100}
               className="mx-auto"
@@ -59,7 +59,7 @@ const SkillSection = () => {
           <div className="p-3">
             <Image
               src="/wordpress.png"
-              alt="group"
+              alt="wordpress"
               width={120}
               height={100}
               className="mx-auto"

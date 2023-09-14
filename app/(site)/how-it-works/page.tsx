@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 import styles from '@/components/work.module.css'
+import Link from "next/link";
 
 const HowItWorksPage = () => {
   return (
@@ -25,11 +26,12 @@ const HowItWorksPage = () => {
           </p>
           </div>
         </div>
-        <div className="max-w-6xl flex sm:flex-row flex-col sm:gap-10 gap-6 items-center justify-center mx-auto pt-8">
-
+        <div className="max-w-6xl hidden sm:flex sm:flex-row flex-col sm:gap-10 gap-6 items-center justify-center mx-auto pt-8">
+            <Link href='#step-1'>
           <button className="rounded-full border-2 px-4 py-3 text-sm bg-gray-100  text-gray-600 hover:bg-gradient-to-l hover:from-orange-600 hover:via-orange-500 hover:to-orange-400 transition-all duration-300 ease-in-out hover:text-white">
              1. Free Consultation
           </button>
+          </Link>
           <button className="rounded-full border-2 px-4 py-3 text-sm bg-gray-100  text-gray-600 hover:bg-gradient-to-l hover:from-orange-600 hover:via-orange-500 hover:to-orange-400 transition-all duration-300 ease-in-out hover:text-white">
              2. Discovery Call
           </button>
@@ -41,8 +43,9 @@ const HowItWorksPage = () => {
           </button>
           </div>
           <div className="flex flex-row max-w-6xl tracking-widest mx-auto pt-20">
-            <div className="basis-1/2 flex flex-col px-8 sm:px-0">
-            <p className="text-orange-500 font-normal">
+            <div className="basis-1/2 flex flex-col px-8 sm:px-4">
+              <div id="step-1">
+                   <p className="text-[#e86a1e] font-normal">
               STEP 1
             </p>
             <h3 className="text-gray-900 text-3xl font-extrabold pt-2">
@@ -50,7 +53,12 @@ const HowItWorksPage = () => {
             </h3>
             <p className="text-gray-900 pt-3">
               We will discuss your business and your goals. We will give you recommendations based on our experience and expertise.
-            </p>
+            </p> 
+            <p className="text-gray-900 pt-3">
+             Our free consultation is at no cost, no obligation to you. We will give you a quote based on your needs. There is no pressure from us to buy anything. We are here to help you. If everything seems like a good fit to you then we'll move on to a discovery call.
+            </p> 
+              </div>
+        
             </div>
             <div className="basis-1/2">
                  

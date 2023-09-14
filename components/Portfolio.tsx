@@ -14,7 +14,7 @@ const Portfolio = () => {
           "drop-shadow-2xl z-10 text-center text-white text-6xl sm:text-[90px] font-extrabold"
         )}
       >
-        Our <span className="text-[#F68800]">Portfolio </span>
+        Our <span className="text-[#e86a1e]">Portfolio </span>
       </h1>
       <Image
         src="/promo.png"

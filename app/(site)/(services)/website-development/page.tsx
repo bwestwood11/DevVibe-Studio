@@ -84,7 +84,7 @@ const WebsiteDevelopment = () => {
           <h1 className="text-center text-white tracking-wide z-[20] font-extrabold text-4xl lg:text-5xl px-5">
             Website Development
           </h1>
-          <p className="z-[20] font-semibold pt-4 text-xl text-orange-500">
+          <p className="z-[20] font-semibold pt-4 text-xl text-[#e86a1e]">
             Creating websites that convert
           </p>
         </div>
@@ -123,7 +123,7 @@ const WebsiteDevelopment = () => {
             </p>
             <div className="mt-8">
               <Link href="/contact">
-                <button className="font-semibold text-white bg-[#F68800] hover:bg-[#F68800]/60 p-2 rounded-md">
+                <button className="font-semibold text-white bg-[#e86a1e] hover:bg-[#e86a1e]/60 p-2 rounded-md">
                   Contact Us
                 </button>
               </Link>
@@ -135,7 +135,7 @@ const WebsiteDevelopment = () => {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
             <div>
-              <h2 className="text-base font-semibold leading-7 text-orange-500">
+              <h2 className="text-base font-semibold leading-7 text-[#e86a1e]">
                 Everything you need
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
@@ -151,7 +151,7 @@ const WebsiteDevelopment = () => {
                 <div key={feature.name} className="relative pl-9">
                   <dt className="font-semibold text-gray-900">
                     <CheckIcon
-                      className="absolute left-0 top-1 h-5 w-5 text-orange-500"
+                      className="absolute left-0 top-1 h-5 w-5 text-[#e86a1e]"
                       aria-hidden="true"
                     />
                     {feature.name}

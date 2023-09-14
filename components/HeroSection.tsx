@@ -47,7 +47,7 @@ const HeroSection = () => {
         className={cn(montserrat.className, "basis-1/2 flex flex-col gap-8")}
       >
         <div className="flex">
-          <h1 className="font-extrabold leading-tight text-5xl tracking-wide bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text text-transparent">
+          <h1 className="font-extrabold leading-tight text-5xl tracking-wide bg-gradient-to-r from-orange-400 to-[#e86a1e] bg-clip-text text-transparent">
             An Agency That Specializes
             <br />
             <Typed
@@ -83,7 +83,9 @@ const HeroSection = () => {
           height={300}
         />
         <div className="sm:flex hidden items-center gap-8">
-          <Dialog>
+
+          {/* Button to Open Video and Watch */}
+          {/* <Dialog>
             <DialogTrigger asChild>
               <Button size="lg" variant="orange" className="w-1/3">
                 <MdOutlineSlowMotionVideo size="20" className="mr-2" /> Watch
@@ -111,7 +113,7 @@ const HeroSection = () => {
                 ></iframe>
               </div>
             </DialogContent>
-          </Dialog>
+          </Dialog> */}
 
           <Button size="lg">Book A Call</Button>
         </div>

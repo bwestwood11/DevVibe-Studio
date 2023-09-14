@@ -19,7 +19,7 @@ export default function Carousel() {
   return (
     <div className='w-full bg-[#F3F4F6] sm:pt-20 py-10 px-4 sm:px-0'>
         <div className='flex text-center items-center justify-center sm:mb-5'>
-        <p className='text-center text-sm sm:text-2xl text-gray-900 leading-7 mr-2'>Spin the</p> <BiSolidCube className='inline-block text-xl sm:text-4xl text-center text-orange-500' /> <p className='text-center text-sm sm:text-2xl text-gray-900 leading-7 ml-2'>to see some our work</p>
+        <p className='text-center text-sm sm:text-2xl text-gray-900 leading-7 mr-2'>Spin the</p> <BiSolidCube className='inline-block text-xl sm:text-4xl text-center text-[#e86a1e]' /> <p className='text-center text-sm sm:text-2xl text-gray-900 leading-7 ml-2'>to see some our work</p>
         </div>
      
       <Swiper

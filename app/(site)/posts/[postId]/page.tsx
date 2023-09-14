@@ -54,7 +54,7 @@ export default async function Post({ params: { postId } }: Props) {
 
   return (
     <main className="px-6 bg-gray-50 w-full prose prose-xl prose-slate dark:prose-invert pt-16">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto">
       <h1 className="text-3xl font-bold mt-4 mb-0">{meta.title}</h1>
       <p className="mt-2 font-medium">{pubDate}</p>
       <article className="mt-4 text-gray-900 leading-7 tracking-wide">{content}</article>

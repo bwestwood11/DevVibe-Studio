@@ -41,7 +41,7 @@ const ClientReviews = () => {
               <div
                 className={`${
                   index === 1
-                    ? "bg-[#F68800] flex flex-col rounded-lg text-white items-center w-full border-gray-50 border-2 py-4 px-8"
+                    ? "bg-[#e86a1e] flex flex-col rounded-lg text-white items-center w-full border-gray-50 border-2 py-4 px-8"
                     : "flex flex-col items-center w-full rounded-lg border-gray-50 border-2 bg-white py-4 px-8"
                 }`}
               >

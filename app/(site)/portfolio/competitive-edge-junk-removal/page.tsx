@@ -28,7 +28,7 @@ const CompetitiveEdgeJunkRemoval = () => {
           <h1 className="text-center text-white tracking-wide z-[20] font-bold text-4xl px-5">
             Competitive Edge Junk Removal Case Study
           </h1>
-          <p className="z-[20] font-semibold pt-4 text-xl text-orange-500">
+          <p className="z-[20] font-semibold pt-4 text-xl text-[#e86a1e]">
             Website Design & Development
           </p>
         </div>
@@ -62,7 +62,7 @@ const CompetitiveEdgeJunkRemoval = () => {
               <p className="text-gray-900 leading-7">Competitive Edge Dumpsters is a small local business that fuels its operation on word of mouth and quality service. They had somewhat of an online presence, but nowhere near where they wanted it to be.</p>
               <h2 className="font-bold text-2xl mb-2 mt-16">What They Needed?</h2>
               <div className="flex flex-row gap-3">
-                <Badge className="mb-2 bg-orange-600">Web Design</Badge>
+                <Badge className="mb-2 bg-[#e86a1e]">Web Design</Badge>
               <Badge className="mb-2">Web Development</Badge>
               <Badge className="mb-2">Local SEO</Badge>
               </div>

@@ -28,7 +28,7 @@ const AppliancePlugPage = () => {
           <h1 className="text-center text-white tracking-wide z-[20] font-bold text-4xl lg:text-5xl px-5">
             Appliance Plug YouTube Channel Case Study
           </h1>
-          <p className="z-[20] font-semibold pt-4 text-xl text-orange-500">
+          <p className="z-[20] font-semibold pt-4 text-xl text-[#e86a1e]">
             Content Creation & Video Editing
           </p>
         </div>

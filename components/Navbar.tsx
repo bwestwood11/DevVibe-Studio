@@ -98,7 +98,7 @@ const Navbar = () => {
         </div>
         <div>
           <Link href="/contact">
-          <button className="font-semibold text-white bg-orange-500 hover:bg-orange-500/60 p-2 rounded-md">
+          <button className="font-semibold text-white bg-[#e86a1e] hover:bg-[#e86a1e]/60 p-2 rounded-md">
             Contact Us
           </button>
           </Link>

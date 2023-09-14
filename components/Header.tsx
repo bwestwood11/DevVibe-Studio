@@ -22,8 +22,8 @@ const Header = () => {
     <div
       className={
         shadow
-          ? "fixed top-0 bg-orange-500 h-6 w-full flex items-center justify-center text-center py-4 px-4 z-[100]"
-          : "bg-orange-500 h-6 w-full flex items-center justify-center text-center py-4 px-4"
+          ? "fixed top-0 bg-[#e86a1e] h-6 w-full flex items-center justify-center text-center py-4 px-4 z-[100]"
+          : "bg-[#e86a1e] h-6 w-full flex items-center justify-center text-center py-4 px-4"
       }
     >
       <a
