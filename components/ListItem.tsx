@@ -25,7 +25,7 @@ const ListItem = ({post}: Props) => {
             className="object-fit sm:object-cover object-left lg:object-center"
           />
         </Link>
-        <div className="absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded drop-shadow-lg text-white p-3 sm:p-5 flex justify-between">
+        <div className="absolute bottom-0 w-full bg-opacity-20 bg-black backdrop-blur-lg rounded drop-shadow-lg text-white p-3 sm:p-4 flex justify-between">
           <Link className="font-bold text-xs sm:text-lg" href={`/posts/${id}`}>
             {title}
             <p className="text-xs sm:text-sm mt-1">{formattedDate}</p>
