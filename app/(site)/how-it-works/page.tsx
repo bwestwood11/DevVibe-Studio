@@ -2,6 +2,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import styles from '@/components/work.module.css'
 import Link from "next/link";
+import { AiFillCaretRight } from "react-icons/ai";
 
 const HowItWorksPage = () => {
   return (
@@ -60,8 +61,26 @@ const HowItWorksPage = () => {
               </div>
         
             </div>
-            <div className="basis-1/2">
-                 
+            <div className="basis-1/2 text-center flex flex-col items-center align-middle">
+                 <h3 className="font-bold pb-6">Here's how our free consultation works:</h3>
+               <ul className="flex flex-col gap-4">
+                   <li className="flex items-center gap-2">
+                    <AiFillCaretRight className='text-[#e86a1e]' />
+                    <p>15 Minute Meeting via Zoom or Google Meets</p>
+                   </li>
+                   <li className="flex items-center gap-2">
+                    <AiFillCaretRight className='text-[#e86a1e]' />
+                    <p>15 Minute Meeting via Zoom or Google Meets</p>
+                   </li>
+                   <li className="flex items-center gap-2">
+                    <AiFillCaretRight className='text-[#e86a1e]' />
+                    <p>15 Minute Meeting via Zoom or Google Meets</p>
+                   </li>
+                   <li className="flex items-center gap-2">
+                    <AiFillCaretRight className='text-[#e86a1e]' />
+                    <p>15 Minute Meeting via Zoom or Google Meets</p>
+                   </li>
+                </ul>
             </div>
           </div>
     </div>
