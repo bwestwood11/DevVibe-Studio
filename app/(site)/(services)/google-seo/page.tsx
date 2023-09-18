@@ -6,7 +6,7 @@ const features = [
   {
     name: "On Page SEO",
     description:
-      "We will create the right keywords and content for your website so you can rank on Google.",
+      "We will research and implement the right keywords for your website. We will make sure your website is optimized for the keywords that your customers are searching for.",
   },
   {
     name: "Responsive Design",
@@ -19,17 +19,17 @@ const features = [
       "We will optimize your website for conversions. So, adding the right call to actions, buttons, and other elements to your website.",
   },
   {
-    name: "Color Schemes",
+    name: "Back Links",
     description:
-      "Implementing the right brand message with the correct color scheme is important. We will make sure your website has the right color scheme.",
+      "We will build back links to your website. This will help your website rank higher on Google.",
   },
 ];
 
 const GoogleSEO = () => {
   return (
-    <div className='w-full'>
+    <div className='w-full bg-[#F3F4F6] pt-20'>
     <div className="px-8 relative z-10">
-    <div className="max-w-7xl mx-auto bg-gray-50 flex sm:flex-row flex-col mt-20">
+    <div className="max-w-7xl mx-auto flex sm:flex-row flex-col">
       <div className="basis-1/2">
         <div className="h-1/2">
           <Image
@@ -59,7 +59,7 @@ const GoogleSEO = () => {
       </div>
     </div>
   </div>
-  <div className="bg-gray-50 py-16 sm:py-32">
+  <div className="bg-[#F3F4F6] py-16 sm:py-32">
     <div className="mx-auto max-w-7xl px-6 lg:px-8">
       <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
         <div>

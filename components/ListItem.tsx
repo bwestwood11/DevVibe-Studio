@@ -31,7 +31,7 @@ const ListItem = ({post}: Props) => {
             <p className="text-xs sm:text-sm mt-1">{formattedDate}</p>
           </Link>
           <div className="flex flex-col md:flex-row gap-y-2 md:gap-x-2 items-center">
-            <div className="bg-[#f1592a] text-center text-white px-3 py-1 rounded-full text-sm font-semibold">
+            <div className="bg-[#f1592a] text-center text-white px-3 py-1 rounded-full text-xs font-semibold">
               <p>{category}</p>
             </div>
           </div>
