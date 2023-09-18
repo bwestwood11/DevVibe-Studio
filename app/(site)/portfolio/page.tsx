@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 const PortfolioPage = () => {
   return (
     <div className="w-full h-full">
-         <div className="bg-gray-50 h-screen">
+         <div className="bg-gray-50 h-full">
            <div className="relative bg-cover bg-center w-screen h-[50vh] flex justify-center items-center">
            <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-t from-black to-transparent z-10" />
             <Image 

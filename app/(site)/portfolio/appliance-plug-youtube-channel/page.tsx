@@ -12,8 +12,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 const AppliancePlugPage = () => {
   return (
-    <div className="w-full">
-      <div className="bg-gray-50">
+    <div className="w-full bg-[#F3F4F6]">
         <div className="relative bg-cover bg-center w-screen h-[50vh] flex flex-col justify-center items-center">
           <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-t from-black to-transparent z-10" />
           <Image
@@ -126,12 +125,9 @@ const AppliancePlugPage = () => {
                 className="mt-16 shadow-2xl shadow-gray-500 rounded-lg border border-gray-300 sm:mx-6"
               />
             </div>
-   
           </div>
-      
-        </div>
-      </div>
-      <div className="bg-gray-50 w-full">
+        
+      <div className="w-full">
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
           Want Results Like This?
@@ -148,6 +144,7 @@ const AppliancePlugPage = () => {
         </div>
       </div>
       </div>
+    </div>
     </div>
   );
 };

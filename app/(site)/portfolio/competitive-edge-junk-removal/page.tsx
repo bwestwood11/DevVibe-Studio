@@ -1,19 +1,17 @@
 import Image from "next/image";
 import analytics from "@/public/analytics.jpg";
 import homepagejunkremoval from "@/public/homepagejunkremoval.png";
-import { cn } from "@/lib/utils";
-import { Montserrat } from "next/font/google";
+
 import blob1 from "@/public/blob1.png";
 import { Badge } from "@/components/ui/badge";
 import PricingPage from "@/public/PricingPageImg.png";
 import JunkRemovalMockup from "@/public/junkremovalmockup.png";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+
 
 const CompetitiveEdgeJunkRemoval = () => {
   return (
-    <div className="w-full">
-      <div className="bg-gray-50">
+    <div className="w-full pb-20 bg-[#F3F4F6]">
         <div className="relative bg-cover bg-center w-screen h-[50vh] flex flex-col justify-center items-center">
           <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-t from-black to-transparent z-10" />
           <Image
@@ -98,8 +96,7 @@ const CompetitiveEdgeJunkRemoval = () => {
               />
             </div>
           </div>
-        </div>
-      </div>
+        </div>   
     </div>
   );
 };

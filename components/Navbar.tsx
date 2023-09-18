@@ -38,7 +38,7 @@ const Navbar = () => {
 
   return (
     <div
-      className= {shadow ? "w-full font-bold h-[90px] shadow-xl items-center z-[100] fixed top-0 bg-white": "w-full font-bold h-[90px] items-center"}
+      className= {shadow ? "w-full font-bold h-[90px] shadow-xl items-center z-[100] fixed top-0 bg-[#F3F4F6]": "w-full bg-[#F3F4F6] font-bold h-[90px] items-center"}
     >
       <nav className={cn(sans.className, "sm:flex hidden max-w-6xl justify-between h-full items-center mx-auto px-5")}>
         <Link href="/">

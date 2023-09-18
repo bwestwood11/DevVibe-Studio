@@ -7,7 +7,7 @@ import {
 
 const FAQ = () => {
   return (
-    <main className="w-full bg-gray-50 px-4 pt-20 sm:py-20 text-left flex">
+    <main className="w-full bg-[#F3F4F6] px-4 pt-20 sm:py-20 text-left flex">
         <div className="max-w-6xl mx-auto">
            <h2 className="font-bold text-2xl tracking-tight mb-4">Frequently Asked Questions</h2>
      <Accordion className="w-full text-gray-900 max-w-2xl" type="single" collapsible>

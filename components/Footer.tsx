@@ -26,7 +26,7 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-gray- border-t-2 mt-8">
+    <footer className="bg-[#F3F4F6] border-t-2">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav className="-mb-6 columns-2 sm:flex sm:justify-center sm:space-x-12" aria-label="Footer">
           {navigation.main.map((item) => (

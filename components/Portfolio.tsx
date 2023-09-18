@@ -7,7 +7,8 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 const Portfolio = () => {
   return (
-    <div className="h-[600px] max-w-6xl mx-auto relative w-full flex justify-center items-center align-middle">
+    <div className="w-full bg-[#F3F4F6]">
+         <div className="h-[600px] max-w-6xl mx-auto relative w-full flex justify-center items-center align-middle">
       <h1
         className={cn(
           styles.text,
@@ -24,6 +25,8 @@ const Portfolio = () => {
         className=" absolute top-0 left-0 w-full h-full object-cover z-0 hover:scale-105 ease-in-out transition-all duration-500"
       />
     </div>
+    </div>
+ 
   );
 };
 

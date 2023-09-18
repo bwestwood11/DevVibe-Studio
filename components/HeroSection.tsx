@@ -18,15 +18,18 @@ import {
 } from "@/components/ui/dialog";
 import Typed from 'react-typed';
 import { useRouter } from "next/navigation";
+import { Poppins } from "next/font/google";
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
+const poppins = Poppins({ subsets: ['latin'], weight: ['800', '400'] });
 
 const HeroSection = () => {
  
   const router = useRouter();
 
   return (
+    <div className="w-full bg-[#F3F4F6]">
     <div className="max-w-6xl relative mx-auto h-screen sm:h-[660px] sm:flex sm:flex-row flex-col sm:pt-[88px] pt-[60px] px-5">
       {/* Blur Effect in background on mobile devices only */}
       <div
@@ -44,7 +47,7 @@ const HeroSection = () => {
 
       {/* left side section of Hero Section */}
       <div
-        className={cn(montserrat.className, "basis-1/2 flex flex-col gap-8")}
+        className={cn(poppins.className, "basis-1/2 flex flex-col gap-8")}
       >
         <div className="flex">
           <h1 className="font-extrabold leading-tight text-5xl tracking-wide bg-gradient-to-r from-orange-400 to-[#e86a1e] bg-clip-text text-transparent">
@@ -178,6 +181,7 @@ const HeroSection = () => {
           <BsArrowDownRight className="inline-block ml-2" />
         </button>
       </div>
+    </div>
     </div>
   );
 };
