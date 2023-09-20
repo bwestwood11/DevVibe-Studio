@@ -1,7 +1,7 @@
 import Image from "next/image";
 import analytics from "@/public/analytics.jpg";
 import homepagejunkremoval from "@/public/homepagejunkremoval.png";
-
+import junkResults from "@/public/junkresults.png";
 import blob1 from "@/public/blob1.png";
 import { Badge } from "@/components/ui/badge";
 import PricingPage from "@/public/PricingPageImg.png";
@@ -51,6 +51,7 @@ const CompetitiveEdgeJunkRemoval = () => {
                 alt="analytics"
                 width={1000}
                 height={1000}
+                priority
                 className="transition duration-500 ease-in-out transform hover:scale-110"
               />
               </div>
@@ -71,7 +72,7 @@ const CompetitiveEdgeJunkRemoval = () => {
           </div>
           <div className="w-full max-w-7xl mx-auto flex sm:flex-row flex-col-reverse">
             <div className="max-w-2xl mx-auto basis-1/2">
-              <h2 className="font-bold text-2xl mb-2 mt-16 text-center">
+              <h2 className="font-bold text-2xl mb-2 mt-16 text-left">
                 The Results
               </h2>
               <p className="text-gray-900 leading-7 mb-4">
@@ -88,11 +89,12 @@ const CompetitiveEdgeJunkRemoval = () => {
             </div>
             <div className="basis-1/2 sm:px-16">
               <Image
-                src={PricingPage}
+                src={junkResults}
                 alt="analytics"
                 width={1000}
                 height={1000}
-                className="mt-16 shadow-2xl shadow-gray-500 rounded-lg border border-gray-300 sm:mx-6"
+                priority
+                className="mt-16 shadow-2xl shadow-gray-500 rounded-lg border border-gray-300 sm:mx-6 transition duration-500 ease-in-out transform hover:scale-110"
               />
             </div>
           </div>
