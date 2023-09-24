@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "Marketing Agency specializing in Web Design, Web Development and Content Creation",
     alternates: {
-      canonical: '/',
+      canonical: 'https://www.competitiveedgedigital.com/',
     }
 };
 
