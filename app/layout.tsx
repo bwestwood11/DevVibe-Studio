@@ -14,6 +14,9 @@ export const metadata: Metadata = {
   title: "Competitive Edge Marketing | Web Design | Web Development",
   description:
     "Marketing Agency specializing in Web Design, Web Development and Content Creation",
+    alternates: {
+      canonical: '/',
+    }
 };
 
 export default function RootLayout({
