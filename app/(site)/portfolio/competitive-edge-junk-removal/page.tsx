@@ -78,7 +78,7 @@ const CompetitiveEdgeJunkRemoval = () => {
               <p className="text-gray-900 leading-7 mb-4">
                 Competitive Edge Dumpsters now has a website that is able to
                 generate leads for them on a daily basis. They are able to
-                accept payments directly on their website and get notified as soon as a new lead comes in.
+                accept payments directly on their website and get notified as soon as a new lead comes in!
               </p>
               <p className="text-gray-700 leading-7 ">
                 Local Google SEO is an ongoing process, but we have been able to
