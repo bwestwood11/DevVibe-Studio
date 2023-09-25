@@ -6,6 +6,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: 'Portfolio | Competitive Edge Digital',
     description: 'Portfolio of websites we have built for our clients.',
+    alternates: {
+      canonical: 'https://www.competitiveedgedigital.com/portfolio',
+      }
     }
 
 const PortfolioPage = () => {

@@ -6,7 +6,15 @@ import blob1 from "@/public/blob1.png";
 import { Badge } from "@/components/ui/badge";
 import PricingPage from "@/public/PricingPageImg.png";
 import JunkRemovalMockup from "@/public/junkremovalmockup.png";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Competitive Edge Junk Removal Case Study | Competitive Edge Marketing",
+  description: 'Case study of Competitive Edge Junk Removal website design and development.',
+  alternates: {
+    canonical: 'https://www.competitiveedgedigital.com/portfolio/competitive-edge-junk-removal',
+  }
+}
 
 
 const CompetitiveEdgeJunkRemoval = () => {

@@ -12,7 +12,10 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us | Competitive Edge Digital Agency",
   description:
-    "We are a marketing agency that specializes in content creation and web development services.",
+    "We are a marketing agency that specializes in web design, web development and Google SEO.",
+  alternates: {
+    canonical: "https://www.competitiveedgedigital.com/about",
+  },
 };
 
 const navigation = [

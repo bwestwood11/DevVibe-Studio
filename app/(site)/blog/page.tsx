@@ -1,5 +1,14 @@
 import { getPostsMeta } from "@/lib/posts";
 import ListItem from "@/components/ListItem";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog | Competitive Edge Digital",
+  description: "Read our blog for tips and tricks on how to grow your business with web design, development and Google SEO.",
+  alternates: {
+    canonical: 'https://www.competitiveedgedigital.com/blog',
+  }
+}
 
 export const revalidate = 10;
 

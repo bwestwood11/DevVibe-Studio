@@ -3,6 +3,16 @@ import { cn } from "@/lib/utils";
 import styles from "@/components/work.module.css";
 import Link from "next/link";
 import { AiFillCaretRight } from "react-icons/ai";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How It Works | Competitive Edge Digital",
+  description:
+    "Here's how we work. We will discuss your business and your goals. We will give you recommendations based on our experience and expertise.",
+  alternates: {
+    canonical: "https://www.competitiveedgedigital.com/how-it-works",
+  },
+};
 
 const HowItWorksPage = () => {
   return (

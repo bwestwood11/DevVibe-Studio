@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { CheckIcon } from "@heroicons/react/20/solid";
+import { Metadata } from 'next';
 
 const features = [
     {
@@ -24,6 +25,14 @@ const features = [
         "Implementing the right brand message with the correct color scheme is important. We will make sure your website has the right color scheme.",
     },
   ];
+
+  export const metadata: Metadata = {
+    title: "Website Design | Competitive Edge Marketing",
+    description: 'Designing a website that is optimized for conversions, search engines, and mobile devices.',
+    alternates: {
+      canonical: 'https://www.competitiveedgedigital.com/website-design',
+    }
+  }
 
 const WebsiteDesignPage = () => {
   return (

@@ -1,6 +1,15 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { CheckIcon } from "@heroicons/react/20/solid";
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Local Google SEO | Competitive Edge Marketing",
+  description: 'Optimize your website with the best Google SEO practices to rank higher on Google.',
+  alternates: {
+    canonical: 'https://www.competitiveedgedigital.com/google-seo',
+  }
+}
 
 const features = [
   {

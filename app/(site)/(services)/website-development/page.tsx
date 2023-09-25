@@ -5,10 +5,12 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Website Development",
-  description:
-    "We build websites that convert. We build websites for home service businesses such as roofing companies, plumbers, construction companies, HVAC work, and more.",
-};
+  title: "Website Development | Competitive Edge Marketing",
+  description: 'Creating the best websites that are optimized for search engines and are mobile friendly.',
+  alternates: {
+    canonical: 'https://www.competitiveedgedigital.com/website-development',
+  }
+}
 
 const features = [
   {
