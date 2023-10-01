@@ -40,12 +40,12 @@ const Navbar = () => {
     <div
       className= {shadow ? "w-full font-bold h-[90px] shadow-xl items-center z-[100] fixed top-0 bg-[#F3F4F6]": "w-full bg-[#F3F4F6] font-bold h-[90px] items-center"}
     >
-      <nav className={cn(sans.className, "sm:flex hidden max-w-6xl justify-between h-full items-center mx-auto px-5")}>
+      <nav className={cn(sans.className, "sm:flex hidden max-w-6xl justify-around h-full items-center mx-auto px-5")}>
         <Link href="/">
           <Image src="/marketinglogo.png" alt="logo" width={180} height={160} />
         </Link>
         <div>
-          <ul className="flex flex-row gap-10 cursor-pointer">
+          <ul className="flex flex-row lg:gap-8 gap-4 px-3 lg:text-lg text-xs items-center cursor-pointer">
             <Link href="/">
               <li className="hover:text-black/60">Home</li>
             </Link>
@@ -98,7 +98,7 @@ const Navbar = () => {
         </div>
         <div>
           <Link href="/contact">
-          <button className="font-semibold text-white bg-[#e86a1e] hover:bg-[#e86a1e]/60 p-2 rounded-md">
+          <button className="font-semibold text-white lg:text-lg text-sm bg-[#e86a1e] hover:bg-[#e86a1e]/60 p-2 rounded-md">
             Contact Us
           </button>
           </Link>

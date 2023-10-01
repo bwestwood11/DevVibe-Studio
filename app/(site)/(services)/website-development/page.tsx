@@ -94,7 +94,7 @@ const WebsiteDevelopment = () => {
       <div className="px-8 relative z-10">
         <div className="max-w-7xl mx-auto bg-gray-50 flex sm:flex-row flex-col mt-20">
           <div className="basis-1/2">
-            <div className="h-1/2">
+            <div className="h-1/2 justify-center">
               <Image
                 src="/webdevelopment2.jpg"
                 alt="analytics"

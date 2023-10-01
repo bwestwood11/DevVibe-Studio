@@ -2,7 +2,6 @@ import Image from "next/image";
 import { BsQuote } from "react-icons/bs";
 import { PiSealCheckFill } from "react-icons/pi";
 
-
 const reviews = [
   {
     id: 1,
@@ -26,7 +25,7 @@ const reviews = [
 
 const ClientReviews = () => {
   return (
-    <div className="w-full sm:h-[600px] h-[1300px] bg-[#F3F4F6] pt-12 sm:pt-24">
+    <div className="w-full sm:h-full bg-[#F3F4F6] pt-12 sm:pt-24">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col text-center">
           <h3 className="text-[#1F2937]">Testimonials</h3>

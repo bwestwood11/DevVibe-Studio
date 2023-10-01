@@ -33,7 +33,7 @@ export default function Carousel() {
         }}
         pagination={true}
         modules={[EffectCube, Pagination]}
-        className="max-w-2xl mx-auto "
+        className="max-w-2xl mx-auto w-3/4"
       >
         <SwiperSlide>
           <Image src='/junkremovalmockup.png' alt='website development' priority width={2000} height={4000} />
