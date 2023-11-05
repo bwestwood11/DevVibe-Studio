@@ -19,6 +19,8 @@ import {
 import Typed from "react-typed";
 import { useRouter } from "next/navigation";
 import { Poppins } from "next/font/google";
+import Link from "next/link";
+import { Badge } from "./ui/badge";
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
@@ -28,8 +30,15 @@ const HeroSection = () => {
   const router = useRouter();
 
   return (
-    <div className="w-full h-full bg-[#F3F4F6] pb-20 sm:pb-0">
-      <div className="max-w-6xl relative mx-auto sm:h-[660px] sm:flex sm:flex-row flex-col sm:pt-[88px] pt-[60px] px-5">
+    <div className="w-full h-full bg-[#F3F4F6] pb-20 sm:pb-0 relative z-10">  
+     <Image 
+      src='/background-wave.png'
+      alt="background wave image"
+      width={1920}
+      height={1080}
+      className="absolute top-0 left-0 opacity-25 h-full w-screen"
+      />
+      <div className="max-w-7xl relative mx-auto h-full sm:flex sm:flex-row flex-col md:pt-[88px] pt-[60px] px-5" style={{pointerEvents: 'all'}}>
         {/* Blur Effect in background on mobile devices only */}
         <div
           className="absolute block sm:hidden inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -43,123 +52,54 @@ const HeroSection = () => {
             }}
           />
         </div>
-
+     
         {/* left side section of Hero Section */}
-        <div className={cn(poppins.className, "basis-1/2 flex flex-col gap-8")}>
-          <div className="flex">
-            <h1 className="font-extrabold leading-tight text-5xl tracking-wide bg-gradient-to-r from-orange-400 to-[#e86a1e] bg-clip-text text-transparent">
+        <div
+          className={cn(montserrat.className, "basis-1/2 flex flex-col gap-8 z-10")}
+        >
+          <div className="flex flex-col">
+            <Badge className="w-1/2 md:w-2/5 lg:2/6 xl:w-1/4 whitespace-nowrap bg-gradient-to-r from-orange-300 via-orange-400 to-orange-600 mb-2">
+              {" "}
+              Premium Services
+            </Badge>
+            <h1 className="font-extrabold leading-tight text-4xl md:text-3xl lg:text-4xl xl:text-5xl tracking-wide text-slate-800">
               An Agency That Specializes
               <br />
               <Typed
                 strings={[
                   "in Web Development",
                   "in Web Design",
-                  "in Local SEO",
+                  "in Google SEO",
                 ]}
                 typeSpeed={150}
                 backSpeed={100}
                 loop
-                className="text-[#041620] text-5xl font-extrabold leading-tight tracking-wide"
+                className="text-slate-800 text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight tracking-wide"
               />
             </h1>
           </div>
-          <h2 className={cn(sans.className, "text-[#041620] text-xl")}>
-            Boost your online presence with our expert web development & design agency.
-            
+          <h2 className={cn(sans.className, "text-slate-600 text-xl")}>
+            Enhance your business with a website that is designed to convert. We
+            build websites that are fast, secure, and easy to manage. We also
+            offer SEO services to help you rank higher on Google.
           </h2>
-
-          {/* Button only appears on mobile version */}
-          <button
-            onClick={() => router.push("/contact")}
-            className="flex items-center gap-1 sm:hidden bg-black text-white text-sm uppercase whitespace-nowrap font-bold p-3 w-2/5 rounded-lg"
-          >
-            Contact Us
-            <BsArrowDownRight className="inline-block" />
-          </button>
-
-          <Image
-            className="mt-5"
-            src="/Review.png"
-            alt="review"
-            width={300}
-            height={300}
-          />
-          <div className="sm:flex hidden items-center gap-8">
-            <Button size="lg">Book A Call</Button>
+          <div className="flex items-center gap-8">
+            <Link href="/contact">
+              <button className="bg-gradient-to-r from-orange-300 via-orange-400 to-orange-600 text-white px-6 py-3 rounded-lg uppercase font-bold tracking-widest text-sm group hover:from-orange-600 hover:via-orange-400 hover:to-orange-300 transition-all">
+                Discover More
+              </button>
+            </Link>
           </div>
         </div>
         {/* Right Side of Hero Section */}
-        <div className="basis-1/2 relative h-full sm:block hidden">
+        <div className="basis-1/2 min-h-full lg:px-6 flex pt-10 sm:pt-0">
           <Image
-            src="/circle.png"
-            alt="circle"
-            width={500}
-            height={500}
+            src="/Brett-Hero-Image.png"
+            alt="Hero Image"
+            width={1920}
+            height={1080}
             layout="responsive"
-            objectFit="contain"
-            className="absolute top-0 right-0"
           />
-          <Image
-            src="/graphart.png"
-            alt="graphart"
-            width={500}
-            height={500}
-            priority
-            layout="responsive"
-            objectFit="contain"
-            className="absolute bottom-0 left-0 z-[10]"
-          />
-          {/* Backdrop Blur on Desktop Version Only */}
-          <div className="bg-black/60 backdrop-blur w-3/4 h-1/3 mx-auto p-6 rounded-lg grid grid-cols-2 gap-5">
-            <div
-              className={cn(
-                sans.className,
-                "text-white items-center flex gap-3"
-              )}
-            >
-              <h4 className="lg:text-5xl text-2xl font-bold">50+ </h4>
-              <p className="lg:text-md text-sm">
-                Projects <br /> Done
-              </p>
-            </div>
-            <div
-              className={cn(
-                sans.className,
-                "text-white items-center flex gap-3"
-              )}
-            >
-              <h4 className="lg:text-5xl text-2xl font-bold">40+ </h4>
-              <p className="lg:text-md text-sm">
-                Happy <br /> Clients
-              </p>
-            </div>
-            <div
-              className={cn(
-                sans.className,
-                "text-white items-center flex gap-3"
-              )}
-            >
-              <h4 className="lg:text-5xl text-2xl font-bold">10+ </h4>
-              <p className="lg:text-md text-sm">
-                Creative <br /> Peoples
-              </p>
-            </div>
-            <div
-              className={cn(
-                sans.className,
-                "text-white items-center flex gap-3"
-              )}
-            >
-              <h4 className="lg:text-5xl text-2xl font-bold">10+ </h4>
-              <p className="lg:text-md text-sm">
-                Years <br /> Experience
-              </p>
-            </div>
-          </div>
-          <button className="bg-black z-[100] mt-16 mx-16 text-white text-2xl uppercase font-bold p-3 w-1/2 rounded-lg">
-            Explore More
-            <BsArrowDownRight className="inline-block ml-2" />
-          </button>
         </div>
       </div>
     </div>

@@ -31,7 +31,7 @@ export default function RootLayout({
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body className={inter.className}>
         <ToastProvider />
-        <Header />
+        {/* <Header /> */}
         <Navbar />
         {children}
         <Footer />

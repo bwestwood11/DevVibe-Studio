@@ -1,6 +1,7 @@
 import ProjectItem from "./ProjectItem"
 import portfolio1 from "@/public/portfolio1.png"
 import theplug from "@/public/theplug.png"
+import waterstreet from "@/public/waterstreet-image.png"
 
 const Projects = () => {
     return (
@@ -23,6 +24,13 @@ const Projects = () => {
         projectUrl='/portfolio/appliance-plug-youtube-channel'
         number='02'
         technology = 'Content Creation'
+        /> 
+        <ProjectItem 
+        title='Waterstreet Mortgage' 
+        backgroundImg={waterstreet.src}
+        projectUrl='/portfolio/waterstreet-mortgage'
+        number='03'
+        technology = 'Next.js 13'
         /> 
             </div>
            </div>

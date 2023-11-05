@@ -18,6 +18,8 @@ import {
   DropdownMenuTrigger,
   DropdownMenuItem
 } from "@/components/ui/dropdown-menu"
+import Button from "./navigation/Button";
+import { NavigationMenuItems } from "./navigation/NavigationMenuItems";
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 
@@ -38,71 +40,20 @@ const Navbar = () => {
 
   return (
     <div
-      className= {shadow ? "w-full font-bold h-[90px] shadow-xl items-center z-[100] fixed top-0 bg-[#F3F4F6]": "w-full bg-[#F3F4F6] font-bold h-[90px] items-center"}
+      className= {shadow ? "w-full font-bold h-[90px] shadow-xl items-center z-[100] fixed top-0 bg-[#F3F4F6]": "w-full bg-[#F3F4F6] font-bold h-[90px] border-b border-slate-300 items-center"}
     >
-      <nav className={cn(sans.className, "sm:flex hidden max-w-6xl justify-around h-full items-center mx-auto px-5")}>
+      <nav className={cn(sans.className, "sm:flex hidden max-w-7xl justify-between h-full items-center mx-auto px-5")}>
         <Link href="/">
           <Image src="/marketinglogo.png" alt="logo" width={180} height={160} />
         </Link>
+        <div className="flex flex-row gap-8">
+      <NavigationMenuItems />
+        
         <div>
-          <ul className="flex flex-row lg:gap-8 gap-4 px-3 lg:text-lg text-xs items-center cursor-pointer">
-            <Link href="/">
-              <li className="hover:text-black/60">Home</li>
-            </Link>
-            <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-              <li className="hover:text-black/60">Services</li>
-            </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-56 mt-6 z-[100]">
-        <DropdownMenuLabel>Services</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <Link href="/website-development">
-        <DropdownMenuItem 
-        className="cursor-pointer hover:bg-gray-100"
-        >
-          Website Development
-        </DropdownMenuItem>
-        </Link>
-        <Link href="/website-design">
-        <DropdownMenuItem
-        className="cursor-pointer hover:bg-gray-100"
-        >
-          Website Design
-        </DropdownMenuItem>
-        </Link>
-        <Link href='google-seo'>
-        <DropdownMenuItem
-        className="cursor-pointer hover:bg-gray-100"
-        >
-          Google SEO
-        </DropdownMenuItem>
-        </Link>
-      </DropdownMenuContent>
-      </DropdownMenu>
-            <Link href="/portfolio">
-              <li className="hover:text-black/60">Portfolio</li>
-            </Link>
-            <Link href="/about">
-              <li className="hover:text-black/60">About Us</li>
-            </Link>
-            <Link href="/how-it-works">
-              <li className="hover:text-black/60">How It Works</li>
-            </Link>
-            <Link href="/contact">
-              <li className="hover:text-black/60">Contact Us</li>
-            </Link>
-            <Link href="/blog">
-              <li className="hover:text-black/60">Blog</li>
-            </Link>
-          </ul>
-        </div>
-        <div>
-          <Link href="/contact">
-          <button className="font-semibold text-white lg:text-lg text-sm bg-[#e86a1e] hover:bg-[#e86a1e]/60 p-2 rounded-md">
-            Contact Us
-          </button>
+          <Link href="/how-it-works">
+         <Button />
           </Link>
-        </div>
+        </div></div>
       </nav>
       {/* Mobile Menu */}
       <nav className="w-full h-[90px] flex items-center sm:hidden justify-between px-5">

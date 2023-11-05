@@ -22,22 +22,22 @@ const Header = () => {
     <div
       className={
         shadow
-          ? "fixed top-0 bg-[#e86a1e] h-6 w-full flex items-center justify-center text-center py-4 px-4 z-[100]"
-          : "bg-[#e86a1e] h-6 w-full flex items-center justify-center text-center py-4 px-4"
+          ? "top-0 bg-orange-500 h-6 w-full flex items-center justify-center text-center py-4 px-4 z-[100]"
+          : "bg-orange-500 h-6 w-full flex items-center justify-center text-center py-4 px-4"
       }
     >
       <a
         className="flex flex-row items-center"
-        href="mailto:brian@competitiveedgedumpsters.com"
+        href="mailto:dabrettwestwood@gmail.com"
       >
         <AiOutlineMail className="text-white sm:flex hidden hover:text-white/70 text-xl mr-3" />{" "}
-        <p className="text-white hover:text-white/70 hidden sm:flex mr-10">
+        <p className="text-white text-sm hover:text-white/70 hidden sm:flex mr-10">
           info@competitiveedgedigital.com
         </p>
       </a>
       <a href="tel:+18134998379" className="flex items-center">
         <AiFillPhone className="text-white text-xl flex mr-2" />{" "}
-        <p className="text-white hover:text-white/70"> (813) 499-8379 </p>
+        <p className="text-white text-sm hover:text-white/70"> (813) 499-8379 </p>
       </a>
     </div>
   );

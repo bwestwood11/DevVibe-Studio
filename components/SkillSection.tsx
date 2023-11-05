@@ -1,74 +1,64 @@
-import Image from "next/image";
-import styles from "./skills.module.css";
-import { cn } from "@/lib/utils";
-
-const SkillSection = () => {
+export default function LogoClouds() {
   return (
-    <div className="mx-auto bg-black w-full mt-[-40px] sm:mt-0 sm:h-24 h-[210px] items-center">
-      <div
-        className={cn(
-          styles["animate-marquee"],
-          "sm:grid sm:grid-cols-5 grid grid-cols-2 sm:gap-6 gap-2 max-w-6xl mx-auto h-full items-center"
-        )}
-      >
-        <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:mt-0 sm:flex justify-center items-center rounded-md">
-          <div className="p-3">
-            <Image
-              src="/react.png"
-              alt="react"
-              width={140}
-              height={100}
-              className="mx-auto"
+    <div className="bg-[#F3F4F6] w-full md:pt-10 lg:pt-0">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="-mx-6 grid grid-cols-2 gap-0.5 overflow-hidden bg-white sm:mx-0 sm:rounded-2xl md:grid-cols-3">
+          <div className="bg-gray-400/5 p-8 sm:p-10">
+            <img
+              className="max-h-12 w-full object-contain"
+              src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg"
+              alt="Transistor"
+              width={158}
+              height={48}
             />
           </div>
-        </div>
-        <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
-          <div className="p-3">
-            <Image
-              src="/figma.png"
-              alt="figma"
-              width={90}
-              height={100}
-              className="mx-auto"
+          <div className="bg-gray-400/5 p-6 sm:p-10">
+            <img
+              className="max-h-12 w-full object-contain"
+              src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg"
+              alt="Reform"
+              width={158}
+              height={48}
             />
           </div>
-        </div>
-        <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
-          <div className="p-3">
-            <Image
-              src="/shopify.png"
-              alt="shopify"
-              width={110}
-              height={100}
-              className="mx-auto"
+          <div className="bg-gray-400/5 p-6 sm:p-10">
+            <img
+              className="max-h-12 w-full object-contain"
+              src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg"
+              alt="Tuple"
+              width={158}
+              height={48}
             />
           </div>
-        </div>
-        <div className="bg-white mx-auto sm:w-3/4 w-3/4 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
-          <div className="p-2">
-            <Image
-              src="/nextjs.png"
-              alt="nextjs"
-              width={70}
-              height={100}
-              className="mx-auto"
+          <div className="bg-gray-400/5 p-6 sm:p-10">
+            <img
+              className="max-h-12 w-full object-contain"
+              src="https://tailwindui.com/img/logos/158x48/laravel-logo-gray-900.svg"
+              alt="Laravel"
+              width={158}
+              height={48}
             />
           </div>
-        </div>
-        <div className="bg-white mx-auto hidden sm:w-3/4 w-1/2 sm:h-2/3 flex-none sm:flex justify-center items-center rounded-md">
-          <div className="p-3">
-            <Image
-              src="/wordpress.png"
-              alt="wordpress"
-              width={120}
-              height={100}
-              className="mx-auto"
+          <div className="bg-gray-400/5 p-6 sm:p-10">
+            <img
+              className="max-h-12 w-full object-contain"
+              src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg"
+              alt="SavvyCal"
+              width={158}
+              height={48}
+            />
+          </div>
+          <div className="bg-gray-400/5 p-6 sm:p-10">
+            <img
+              className="max-h-12 w-full object-contain"
+              src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg"
+              alt="Statamic"
+              width={158}
+              height={48}
             />
           </div>
         </div>
       </div>
     </div>
-  );
-};
-
-export default SkillSection;
+  )
+}
