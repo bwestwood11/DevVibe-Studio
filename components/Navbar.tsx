@@ -16,8 +16,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-  DropdownMenuItem
-} from "@/components/ui/dropdown-menu"
+  DropdownMenuItem,
+} from "@/components/ui/dropdown-menu";
 import Button from "./navigation/Button";
 import { NavigationMenuItems } from "./navigation/NavigationMenuItems";
 
@@ -40,29 +40,39 @@ const Navbar = () => {
 
   return (
     <div
-      className= {shadow ? "w-full font-bold h-[90px] shadow-xl items-center z-[100] fixed top-0 bg-[#F3F4F6]": "w-full bg-[#F3F4F6] font-bold h-[90px] border-b border-slate-300 items-center"}
+      className={
+        shadow
+          ? "w-full font-bold h-[90px] shadow-xl items-center z-[100] fixed top-0 bg-[#F3F4F6]"
+          : "w-full bg-[#F3F4F6] font-bold h-[90px] border-b border-slate-300 items-center"
+      }
     >
-      <nav className={cn(sans.className, "sm:flex hidden max-w-7xl justify-between h-full items-center mx-auto px-5")}>
+      <nav
+        className={cn(
+          sans.className,
+          "sm:flex hidden max-w-7xl justify-between h-full items-center mx-auto px-5"
+        )}
+      >
         <Link href="/">
           <Image src="/marketinglogo.png" alt="logo" width={180} height={160} />
         </Link>
         <div className="flex flex-row gap-8">
-      <NavigationMenuItems />
-        
-        <div>
-          <Link href="/how-it-works">
-         <Button />
-          </Link>
-        </div></div>
+          <NavigationMenuItems />
+
+          <div>
+            <Link href="/how-it-works">
+              <Button />
+            </Link>
+          </div>
+        </div>
       </nav>
       {/* Mobile Menu */}
-      <nav className="w-full h-[90px] flex items-center sm:hidden justify-between px-5">
+      <nav className="w-full h-[90px] flex items-center sm:hidden z-[100] justify-between px-5">
         <Link href="/">
-        <Image src="/marketinglogo.png" alt="logo" width={200} height={200} />
+          <Image src="/marketinglogo.png" alt="logo" width={200} height={200} />
         </Link>
         <GiHamburgerMenu
           onClick={() => setShowMenu(true)}
-          className="text-3xl ml-auto z-10"
+          className="text-3xl ml-auto z-[100]"
         />
         {showMenu && (
           <div className="absolute top-0 left-0 w-full h-screen z-20 bg-white backdrop-blur flex flex-col items-center justify-center">
@@ -74,10 +84,10 @@ const Navbar = () => {
               <Link href="/">
                 <li onClick={() => setShowMenu(false)}>Home</li>
               </Link>
-        
+
               <Link href="/services">
                 <li onClick={() => setShowMenu(false)}>Services</li>
-                </Link>    
+              </Link>
               <Link href="/portfolio">
                 <li onClick={() => setShowMenu(false)}>Portfolio</li>
               </Link>
@@ -103,8 +113,8 @@ const Navbar = () => {
               </button>
             </Link>
             <div className="flex flex-row gap-4 mt-8">
-            <AiFillInstagram className="text-3xl mt-8 hover:text-black/70" />
-            <RiFacebookBoxFill className="text-3xl mt-8 hover:text-black/70" />
+              <AiFillInstagram className="text-3xl mt-8 hover:text-black/70" />
+              <RiFacebookBoxFill className="text-3xl mt-8 hover:text-black/70" />
             </div>
           </div>
         )}
