@@ -75,7 +75,7 @@ const Navbar = () => {
           className="text-3xl ml-auto z-[100]"
         />
         {showMenu && (
-          <div className="absolute top-0 left-0 w-full h-screen z-20 bg-white backdrop-blur flex flex-col items-center justify-center">
+          <div className="absolute top-0 left-0 w-full h-screen z-[150] bg-white backdrop-blur flex flex-col items-center justify-center">
             <GrClose
               onClick={() => setShowMenu(false)}
               className="absolute top-10 right-10 text-3xl text-black ml-auto transition-shadow"
