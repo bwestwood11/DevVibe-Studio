@@ -1,9 +1,9 @@
-"use client"
- 
-import * as React from "react"
-import Link from "next/link"
- 
-import { cn } from "@/lib/utils"
+"use client";
+
+import * as React from "react";
+import Link from "next/link";
+
+import { cn } from "@/lib/utils";
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -12,8 +12,8 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu"
- 
+} from "@/components/ui/navigation-menu";
+
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "The Appliance Plug",
@@ -33,20 +33,20 @@ const components: { title: string; href: string; description: string }[] = [
     description:
       "A mortgage broker that needed a website that converts and ranks on Google.",
   },
-]
- 
+];
+
 export function NavigationMenuItems() {
   return (
     <NavigationMenu className="z-[100]">
       <NavigationMenuList>
-      <NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-      <NavigationMenuItem>
+        <NavigationMenuItem>
           <Link href="/about" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About Us
@@ -57,9 +57,12 @@ export function NavigationMenuItems() {
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-             
-              <ListItem href="/website-design" title="Web Design">
-                Professional designing and layout of your website for best user experience.
+              <ListItem
+                href="/website-design"
+                title="Web Design"
+              >
+                Professional designing and layout of your website for best user
+                experience.
               </ListItem>
               <ListItem href="/website-development" title="Web Development">
                 Coding your website from scratch to ensure the best performance.
@@ -95,9 +98,9 @@ export function NavigationMenuItems() {
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
-  )
+  );
 }
- 
+
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
   React.ComponentPropsWithoutRef<"a">
@@ -120,6 +123,6 @@ const ListItem = React.forwardRef<
         </a>
       </NavigationMenuLink>
     </li>
-  )
-})
-ListItem.displayName = "ListItem"
+  );
+});
+ListItem.displayName = "ListItem";

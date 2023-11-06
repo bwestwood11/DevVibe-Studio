@@ -113,17 +113,16 @@ const HowItWorksPage = () => {
           </ul>
         </div>
       </div>
-      <div className="flex sm:flex-row flex-col-reverse max-w-6xl tracking-widest mx-auto pt-20">
+      <div className="flex sm:flex-row flex-col-reverse max-w-6xl items-center tracking-widest mx-auto pt-20">
         <div className="basis-1/2 flex flex-col px-8 sm:px-4 pt-10 sm:pt-0">
         <Image 
-            src="/meeting.jpg"
-            width={400}
+            src="/meeting.gif"
+            width={500}
             height={500}
             alt="takeoff image"
-            className="rounded-lg shadow-xl shadow-black/70"
             />
         </div>
-        <div className="basis-1/2 text-left px-8 pt-10 flex flex-col items-center align-middle">
+        <div className="basis-1/2 text-left px-8 flex flex-col items-center align-middle">
           <div id="step-2">
             <p className="text-[#e86a1e] font-normal">STEP 2</p>
             <h3 className="text-gray-900 text-3xl font-extrabold pt-2">
@@ -141,7 +140,7 @@ const HowItWorksPage = () => {
           </div>
         </div>
       </div>
-      <div className="flex sm:flex-row flex-col max-w-6xl tracking-widest mx-auto pt-20 items-center align-middle">
+      <div className="flex sm:flex-row flex-col max-w-6xl tracking-widest mx-auto items-center align-middle">
         <div className="basis-1/2 flex flex-col px-8 sm:px-4">
           <div id="step-3">
             <p className="text-[#e86a1e] font-normal">STEP 3</p>
@@ -160,22 +159,20 @@ const HowItWorksPage = () => {
         </div>
         <div className="basis-1/2 text-left px-8 pt-10 flex flex-col items-center align-middle">
         <Image 
-            src="/plan.jpg"
+            src="/planning.gif"
             width={400}
             height={500}
             alt="plan image"
-            className="rounded-lg shadow-xl mx-auto shadow-black/70"
             />
         </div>
       </div>
       <div className="flex sm:flex-row flex-col-reverse max-w-6xl tracking-widest mx-auto pt-20">
         <div className="basis-1/2 flex flex-col px-8 sm:px-4 pt-10 sm:pt-0">
         <Image 
-            src="/takeoff.jpg"
+            src="/takeoff.gif"
             width={400}
             height={500}
             alt="takeoff image"
-            className="rounded-lg shadow-xl shadow-black/70"
             />
         </div>
         <div className="basis-1/2 text-left px-8 pt-10 flex flex-col items-center align-middle">
