@@ -1,22 +1,35 @@
+'use client'
+
 import Image from 'next/image'
 import { cn } from '@/lib/utils'
 import { Montserrat } from 'next/font/google'
+import { motion } from 'framer-motion'
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 const WhoWeAre = () => {
   return (
-    <div className='w-full bg-[#F3F4F6] pt-20'>
+    <div className='w-full bg-[#F3F4F6] lg:py-36 py-20'>
         <div className='max-w-7xl mx-auto flex flex-col gap-6 sm:gap-0 md:flex-row'>
-                  <div className='basis-1/2 px-2'>
+                  <motion.div
+                  initial={{opacity: 0, x: -100}}
+                  transition={{duration: 1}}
+                  whileInView={{opacity: 1, x: 0}}
+                  viewport={{once: true}}
+                  className='basis-1/2 px-2'>
                      <Image
                      src='/Hero-Image-2.png'
                         alt='Hero Image'
                         width={600}
                         height={600}
                         />
-                  </div>
-                  <div className='basis-1/2 px-6'>
+                  </motion.div>
+                  <motion.div
+                    initial={{opacity: 0, x: 200}}
+                    transition={{duration: 1}}
+                    whileInView={{opacity: 1, x: 0}}
+                    viewport={{once: true}}
+                   className='basis-1/2 px-6'>
                       <p className='uppercase font-bold text-orange-500'>Who We Are</p>
                       <h2 className={cn(montserrat.className, 'font-extrabold text-3xl')}>Delivering Real Results for Real People.</h2>
                       <p className='mt-4 text-gray-600 tracking-wide leading-7'>
@@ -48,7 +61,7 @@ const WhoWeAre = () => {
                                 </div>
                             </div>
                         </div>
-                  </div>
+                  </motion.div>
         </div>
     </div>
   )

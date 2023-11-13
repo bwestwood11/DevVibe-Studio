@@ -13,23 +13,27 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import {AiFillYoutube, AiOutlineDiff} from 'react-icons/ai'
 
-const components: { title: string; href: string; description: string }[] = [
+const components: { title: string; href: string; icon: string;  description: string }[] = [
   {
     title: "The Appliance Plug",
     href: "/portfolio/appliance-plug-youtube-channel",
+    icon: AiFillYoutube,
     description:
       "Appliance retailer that used our help to utilize YouTube to be seen by millions of people organically.",
   },
   {
     title: "Competitive Edge Junk Removal & Hauling",
     href: "/portfolio/competitive-edge-junk-removal",
+    icon: AiOutlineDiff,
     description:
       "Junk removal company that used our help to rank on Google and get a website that converts.",
   },
   {
     title: "Waterstreet Mortgage",
     href: "/portfolio/waterstreet-mortgage",
+    icon: AiOutlineDiff,
     description:
       "A mortgage broker that needed a website that converts and ranks on Google.",
   },

@@ -94,3 +94,7 @@
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
 }
+
+h1 {
+  @apply font-extrabold leading-tight text-4xl md:text-3xl lg:text-4xl xl:text-5xl tracking-wide text-slate-800
+}

@@ -1,33 +1,19 @@
-"use client";
+'use client'
 
 import { Montserrat } from "next/font/google";
 import { cn } from "@/lib/utils";
 import { Source_Sans_3 } from "next/font/google";
 import Image from "next/image";
-import { BsArrowDownRight } from "react-icons/bs";
-import { Button } from "./ui/button";
-import { MdOutlineSlowMotionVideo } from "react-icons/md";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
 import Typed from "react-typed";
-import { useRouter } from "next/navigation";
-import { Poppins } from "next/font/google";
-import Link from "next/link";
+
 import { Badge } from "./ui/badge";
+
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 const montserrat = Montserrat({ subsets: ["latin"] });
-const poppins = Poppins({ subsets: ["latin"], weight: ["800", "400"] });
+
 
 const HeroSection = () => {
-  const router = useRouter();
 
   return (
     <div className="w-full h-full bg-[#F3F4F6] pb-20 sm:pb-0 relative z-10">  
@@ -55,6 +41,7 @@ const HeroSection = () => {
      
         {/* left side section of Hero Section */}
         <div
+     
           className={cn(montserrat.className, "basis-1/2 flex flex-col gap-8 z-10")}
         >
           <div className="flex flex-col">
@@ -62,7 +49,7 @@ const HeroSection = () => {
               {" "}
               Premium Services
             </Badge>
-            <h1 className="font-extrabold leading-tight text-4xl md:text-3xl lg:text-4xl xl:text-5xl tracking-wide text-slate-800">
+            <h1>
               An Agency That Specializes
               <br />
               <Typed
@@ -74,7 +61,6 @@ const HeroSection = () => {
                 typeSpeed={150}
                 backSpeed={100}
                 loop
-                className="text-slate-800 text-4xl md:text-3xl lg:text-4xl xl:text-5xl font-extrabold leading-tight tracking-wide"
               />
             </h1>
           </div>
@@ -84,15 +70,16 @@ const HeroSection = () => {
             offer SEO services to help you rank higher on Google.
           </h2>
           <div className="flex items-center gap-8">
-            <Link href="/contact">
+            <a href="https://calendly.com/competitive_edge_digital/free-consultation">
               <button className="bg-gradient-to-r from-orange-300 via-orange-400 to-orange-600 text-white px-6 py-3 rounded-lg uppercase font-bold tracking-widest text-sm group hover:from-orange-600 hover:via-orange-400 hover:to-orange-300 transition-all">
-                Discover More
+                Book a Call
               </button>
-            </Link>
+            </a>
           </div>
         </div>
         {/* Right Side of Hero Section */}
-        <div className="basis-1/2 min-h-full lg:px-6 flex pt-10 sm:pt-0">
+        <div
+        className="basis-1/2 min-h-full lg:px-6 flex pt-10 sm:pt-0">
           <Image
             src="/Brett-Hero-Image.png"
             alt="Hero Image"
