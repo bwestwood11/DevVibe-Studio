@@ -1,6 +1,6 @@
 
 import AboutUsSection1 from "@/components/About-Us-Section";
-import WhoWeAre from "@/components/Who-We-Are";
+import WhoWeAre from "@/components/landing-page/Who-We-Are";
 import { Metadata } from "next";
 import Image from "next/image";
 

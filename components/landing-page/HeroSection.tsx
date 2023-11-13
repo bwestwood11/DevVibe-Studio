@@ -6,7 +6,7 @@ import { Source_Sans_3 } from "next/font/google";
 import Image from "next/image";
 import Typed from "react-typed";
 
-import { Badge } from "./ui/badge";
+import { Badge } from "../ui/badge";
 
 
 const sans = Source_Sans_3({ subsets: ["latin"] });

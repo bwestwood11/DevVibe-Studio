@@ -17,15 +17,20 @@
               }}
             />
           </div>
-          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
+          <div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl ">
             <h2 className="text-base font-semibold leading-8 text-indigo-400">Free Gift</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Website Performance&nbsp;Breakdown
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-              Receive a free audit of your website's performance, best practices, SEO score & accessibility. We'll also provide you with a list of recommendations to improve your website's performance. 
+              Receive a free audit of your website's performance, best practices, SEO score & accessibility score when you book a free consultation with us. 
             </p>
           </div>
+          <a href="https://calendly.com/competitive_edge_digital/free-consultation">
+          <button className="mt-6 bg-white p-3 rounded-lg font-bold text-base leading-8 hover:bg-white/70">
+            Book a Call
+          </button>
+          </a>
         </div>
       </div>
     )

@@ -1,15 +1,12 @@
-import BigCTA from "@/components/Big-CTA";
-import ClientReviews from "@/components/ClientReviews";
+import BigCTA from "@/components/landing-page/Big-CTA";
 import FAQ from "@/components/FAQ";
-import Features from "@/components/Features";
-import GoogleReviews from "@/components/Google-Reviews";
-import Hero2 from "@/components/Hero2";
-import HeroSection from "@/components/HeroSection";
-import Portfolio from "@/components/Portfolio";
+import Features from "@/components/landing-page/Features";
+import GoogleReviews from "@/components/landing-page/Google-Reviews";
+import HeroSection from "@/components/landing-page/HeroSection";
 import LogoClouds from "@/components/SkillSection";
-import Stats from "@/components/Stats";
-import Carousel from "@/components/Swiper";
-import WhoWeAre from "@/components/Who-We-Are";
+import Stats from "@/components/landing-page/Stats";
+import Carousel from "@/components/landing-page/Swiper";
+import WhoWeAre from "@/components/landing-page/Who-We-Are";
 
 export default function Home() {
   return (
@@ -19,8 +16,8 @@ export default function Home() {
       <WhoWeAre />
       <Stats />
       <Features />
-      <Carousel />
       <GoogleReviews />
+      <Carousel />
       <BigCTA />
       <FAQ />
     </div>

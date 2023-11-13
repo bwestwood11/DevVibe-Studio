@@ -44,11 +44,11 @@ const FAQ = () => {
   <AccordionItem value="item-6">
     <AccordionTrigger>Are the websites created with SEO in mind?</AccordionTrigger>
     <AccordionContent>
-      Every website we create is created with SEO in mind. We use the latest SEO techniques to ensure that your website is optimized for Google.
+      Every website we create is made with SEO in mind. We use the latest SEO techniques to ensure that your website is optimized for Google.
     </AccordionContent>
   </AccordionItem>
   <AccordionItem value="item-7">
-    <AccordionTrigger className="text-left">Do the clients provide the images and copy or does Competitive Edge Digital?</AccordionTrigger>
+    <AccordionTrigger className="text-left">Do you have to provide images or text?</AccordionTrigger>
     <AccordionContent>
         The client usually provides the images and copy. We can help you with this process if needed and can provide editing services for pictures/videos for an additional fee.
     </AccordionContent>

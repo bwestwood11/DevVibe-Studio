@@ -18,8 +18,8 @@ import {
   DropdownMenuTrigger,
   DropdownMenuItem,
 } from "@/components/ui/dropdown-menu";
-import Button from "./navigation/Button";
-import { NavigationMenuItems } from "./navigation/NavigationMenuItems";
+import Button from "./Button";
+import { NavigationMenuItems } from "./NavigationMenuItems";
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 
