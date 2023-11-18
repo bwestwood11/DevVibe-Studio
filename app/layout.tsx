@@ -5,7 +5,6 @@ import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/Footer";
 import { CrispProvider } from "@/components/crisp-provider";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
-import Header from "@/components/Header";
 import ToastProvider from "@/components/ToastProvider";
 
 const inter = Inter({ subsets: ["latin"] });
