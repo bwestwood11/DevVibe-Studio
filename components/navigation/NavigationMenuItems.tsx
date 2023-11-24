@@ -71,6 +71,9 @@ export function NavigationMenuItems() {
               <ListItem href="/website-development" title="Web Development">
                 Coding your website from scratch to ensure the best performance.
               </ListItem>
+              <ListItem href="/website-development" title="Web Development">
+                Coding your website from scratch to ensure the best performance.
+              </ListItem>
               <ListItem href="/google-seo" title="Google SEO">
                 Ranking your website on Google to get more traffic and sales.
               </ListItem>

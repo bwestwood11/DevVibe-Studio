@@ -9,15 +9,6 @@ import { GrClose } from "react-icons/gr";
 import { useState, useEffect } from "react";
 import { AiFillInstagram } from "react-icons/ai";
 import { RiFacebookBoxFill } from "react-icons/ri";
-import {
-  DropdownMenu,
-  DropdownMenuCheckboxItem,
-  DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
 import Button from "./Button";
 import { NavigationMenuItems } from "./NavigationMenuItems";
 
