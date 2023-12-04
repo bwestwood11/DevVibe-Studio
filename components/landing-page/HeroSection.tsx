@@ -1,22 +1,16 @@
 'use client'
 
-import { Montserrat } from "next/font/google";
+import { montserrat, sourceSans3 } from "@/app/fonts";
 import { cn } from "@/lib/utils";
-import { Source_Sans_3 } from "next/font/google";
 import Image from "next/image";
 import Typed from "react-typed";
-
 import { Badge } from "../ui/badge";
-
-
-const sans = Source_Sans_3({ subsets: ["latin"] });
-const montserrat = Montserrat({ subsets: ["latin"] });
 
 
 const HeroSection = () => {
 
   return (
-    <div className="w-full h-full bg-[#F3F4F6] pb-20 sm:pb-0 relative z-10">  
+    <div className="w-full h-full bg-[#F3F4F6] pb-0 sm:pb-0 relative z-10">  
      <Image 
       src='/background-wave.png'
       alt="background wave image"
@@ -41,15 +35,14 @@ const HeroSection = () => {
      
         {/* left side section of Hero Section */}
         <div
-     
-          className={cn(montserrat.className, "basis-1/2 flex flex-col gap-8 z-10")}
+          className= "basis-1/2 flex flex-col gap-8 z-10"
         >
           <div className="flex flex-col">
             <Badge className="w-1/2 md:w-2/5 lg:2/6 xl:w-1/4 whitespace-nowrap bg-gradient-to-r from-orange-300 via-orange-400 to-orange-600 mb-2">
               {" "}
               Premium Services
             </Badge>
-            <h1>
+            <h1 className={montserrat.className}>
               An Agency That Specializes
               <br />
               <Typed
@@ -64,12 +57,12 @@ const HeroSection = () => {
               />
             </h1>
           </div>
-          <h2 className={cn(sans.className, "text-slate-600 text-xl")}>
+          <p className={cn(sourceSans3.className, "text-xl")}>
             Enhance your business with a website that is designed to convert. We
             build websites that are fast, secure, and easy to manage. We also
             offer SEO services to help you rank higher on Google.
-          </h2>
-          <div className="flex items-center gap-8">
+          </p>
+          <div className="flex items-center gap-8 md:pb-6 pb-0 lg:pb-0">
             <a href="https://calendly.com/competitive_edge_digital/free-consultation">
               <button className="bg-gradient-to-r from-orange-300 via-orange-400 to-orange-600 text-white px-6 py-3 rounded-lg uppercase font-bold tracking-widest text-sm group hover:from-orange-600 hover:via-orange-400 hover:to-orange-300 transition-all">
                 Book a Call

@@ -49,7 +49,7 @@ const Navbar = () => {
         <div className="flex flex-row gap-8">
           <NavigationMenuItems />
 
-          <div>
+          <div className="hidden lg:block">
             <Link href="/how-it-works">
               <Button />
             </Link>

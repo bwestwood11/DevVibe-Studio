@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/Footer";
-import { CrispProvider } from "@/components/crisp-provider";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import ToastProvider from "@/components/ToastProvider";
 import Script from "next/script";
+import { sourceSans3 } from "./fonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,9 +26,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* <CrispProvider /> */}
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body className={inter.className}>
+        {/* Script Tag that allows for the AI voice chat bot from VoiceFlow */}
       <Script
         type="text/javascript"
         dangerouslySetInnerHTML={{
@@ -46,7 +46,6 @@ export default function RootLayout({
         }}
       ></Script>
         <ToastProvider />
-        {/* <Header /> */}
         <Navbar />
         {children}
         <Footer />

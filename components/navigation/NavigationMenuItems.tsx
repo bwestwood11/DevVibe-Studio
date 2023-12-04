@@ -68,8 +68,8 @@ export function NavigationMenuItems() {
                 Professional designing and layout of your website for best user
                 experience.
               </ListItem>
-              <ListItem href="/website-development" title="Web Development">
-                Coding your website from scratch to ensure the best performance.
+              <ListItem href="/AI-chatbots" title="AI Chatbots">
+                Your own custom AI assistant that is trained on your business.
               </ListItem>
               <ListItem href="/website-development" title="Web Development">
                 Coding your website from scratch to ensure the best performance.

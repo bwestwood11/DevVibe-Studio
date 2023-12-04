@@ -96,5 +96,9 @@
 }
 
 h1 {
-  @apply font-extrabold leading-tight text-4xl md:text-3xl lg:text-4xl xl:text-5xl tracking-wide text-slate-800
+  @apply font-extrabold leading-tight text-4xl lg:text-4xl xl:text-5xl tracking-wide text-slate-800
+}
+
+p {
+  @apply text-slate-600
 }

@@ -10,13 +10,13 @@ const features = [
   {
     name: "Web Design & Development",
     description:
-      "From responsive design to e-commerce development, we offer comprehensive web design and development services tailored to your specific business needs.",
+      "From wire frames to custom development builds, we offer comprehensive web design and development services tailored to your specific business needs.",
     icon: FaHandHoldingHeart,
   },
   {
-    name: "Content Creation",
+    name: "AI Chatbot Development",
     description:
-      "Enhance your brands identity and make a lasting impression on your audience with our top-notch content creation team. We do offer ongoing video and photo editing services as well.",
+      "Embrace the power of AI and machine learning with our custom chatbot & assistant development services.",
     icon: BsGiftFill,
   },
   {
@@ -34,13 +34,13 @@ const features = [
   {
     name: "UI/UX",
     description:
-      "Play a vital role in creating a successful digital product. we can help you bring your vision to life with thoughtful and intuitive design.",
+      "Play a vital role in creating a successful digital product. We can help you bring your vision to life with thoughtful and intuitive design.",
     icon: RiTrophyFill,
   },
   {
-    name: "Consultation",
+    name: "Training & Consulting",
     description:
-      "As a consultant for agency services, I help businesses navigate the complexities of the digital world.",
+      "If you are a DIY type of person, we can help you get started with your website and provide you with the tools to succeed.",
     icon: RiWaterFlashFill,
   },
 ];
