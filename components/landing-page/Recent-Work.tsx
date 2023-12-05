@@ -6,9 +6,9 @@ const sans = Source_Sans_3({ subsets: ["latin"] });
 
 const RecentWork = () => {
   return (
-    <div className={`w-full bg-[#F3F4F6] py-20 ${sans.className}`}>
+    <div className={`w-full bg-[#F3F4F6] pt-20 pb-40 sm:pb-20 ${sans.className}`}>
       <div className="max-w-7xl mx-auto px-8 sm:px-0">
-         <div className="w-full sm:w-4/5 mx-auto flex flex-col sm:flex-row px-6 mb-20">
+         <div className="w-full mx-auto flex flex-col lg:flex-row px-6 mb-20">
         <div className="flex basis-1/2 w-full h-full">
           <Image
             src="/voiceFusion.png"
@@ -42,7 +42,7 @@ const RecentWork = () => {
           </button>
         </div>
       </div>
-      <div className="w-full sm:w-4/5 mx-auto flex flex-col-reverse sm:flex-row px-6 mb-20">
+      <div className="w-full mx-auto flex flex-col-reverse lg:flex-row px-6 mb-20">
         <div className="basis-1/2 flex flex-col leading-7">
           <h2 className={`font-bold text-xl ${sans.className}`}>
             Competitive Edge Junk Removal & Hauling
@@ -77,7 +77,7 @@ const RecentWork = () => {
           />
         </div>
       </div>
-      <div className="w-full sm:w-4/5 mx-auto flex flex-col sm:flex-row px-6">
+      <div className="w-full mx-auto flex flex-col lg:flex-row px-6">
         <div className="flex basis-1/2 w-full h-full">
           <Image
             src="/multi-device-waterstreet.png"

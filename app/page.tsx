@@ -7,6 +7,7 @@ import Carousel from "@/components/landing-page/Swiper";
 import WhoWeAre from "@/components/landing-page/Who-We-Are";
 import HowWeWork from "@/components/landing-page/How-We-Work";
 import RecentWork from "@/components/landing-page/Recent-Work";
+import VideoTestimonial from "@/components/landing-page/Video-Testimonial";
 
 export default function Home() {
   return (
@@ -17,9 +18,8 @@ export default function Home() {
       <WhoWeAre />
       <GoogleReviews />
       <RecentWork />
+      <VideoTestimonial />
       <Features />
-
-      {/* <Carousel /> */}
       <FAQ />
     </div>
   );
