@@ -5,7 +5,7 @@ const VideoTestimonial = () => {
   return (
     <div className="bg-[#F3F4F6] w-full h-[400px]">
       <div className="max-w-7xl mx-auto flex flex-col sm:flex-row h-full 2xl:ml-[450px] xl:ml-[270px] lg:ml-[80px] px-10 lg:px-0 justify-center">
-        <div className=" flex flex-col bg-gray-500 rounded-lg text-left p-8">
+        <div className=" flex flex-col bg-gradient-to-r from-gray-600 via-gray-500 to-gray-400 rounded-lg text-left p-8 shadow-lg">
           <div className="max-w-md pr-8">
             <div className="flex flex-row items-center">
               <div className="w-1 h-14 bg-orange-500 mr-3"></div>
