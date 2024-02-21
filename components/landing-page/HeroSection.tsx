@@ -16,6 +16,7 @@ const HeroSection = () => {
       alt="background wave image"
       width={1920}
       height={1080}
+      priority
       className="absolute top-0 left-0 opacity-25 h-full w-screen"
       />
       <div className="max-w-7xl relative mx-auto h-full sm:flex sm:flex-row flex-col md:pt-[88px] pt-[60px] px-5" style={{pointerEvents: 'all'}}>
