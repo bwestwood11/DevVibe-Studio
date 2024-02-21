@@ -11,11 +11,11 @@ import { sourceSans3 } from "./fonts";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Competitive Edge Marketing | Web Design | Web Development",
+  title: "DevVibe Studio | Web Design | Web Development",
   description:
-    "Marketing Agency specializing in Web Design, Web Development and Content Creation",
+    "Creative agency specializing in Web Design, Web Development and Content Creation",
   alternates: {
-    canonical: "https://www.competitiveedgedigital.com",
+    canonical: "https://www.devvibestudio.com",
   },
 };
 
@@ -29,10 +29,10 @@ export default function RootLayout({
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body className={inter.className}>
         {/* Script Tag that allows for the AI voice chat bot from VoiceFlow */}
-      <Script
-        type="text/javascript"
-        dangerouslySetInnerHTML={{
-          __html: `(function(d, t) {
+        <Script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `(function(d, t) {
             var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
             v.onload = function() {
               window.voiceflow.chat.load({
@@ -43,8 +43,8 @@ export default function RootLayout({
             }
             v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
         })(document, 'script')`,
-        }}
-      ></Script>
+          }}
+        ></Script>
         <ToastProvider />
         <Navbar />
         {children}

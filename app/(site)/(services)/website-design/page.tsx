@@ -28,10 +28,10 @@ const features = [
   ];
 
   export const metadata: Metadata = {
-    title: "Website Design | Competitive Edge Marketing",
+    title: "Website Design | DevVibe Studio",
     description: 'Designing a website that is optimized for conversions, search engines, and mobile devices.',
     alternates: {
-      canonical: 'https://www.competitiveedgedigital.com/website-design',
+      canonical: 'https://www.devvibestudio.com/website-design',
     }
   }
 

@@ -9,10 +9,10 @@ import JunkRemovalMockup from "@/public/junkremovalmockup.png";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Competitive Edge Junk Removal Case Study | Competitive Edge Marketing",
+  title: "Competitive Edge Junk Removal Case Study | DevVibe Studio",
   description: 'Case study of Competitive Edge Junk Removal website design and development.',
   alternates: {
-    canonical: 'https://www.competitiveedgedigital.com/portfolio/competitive-edge-junk-removal',
+    canonical: 'https://www.devvibestudio.com/portfolio/competitive-edge-junk-removal',
   }
 }
 

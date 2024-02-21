@@ -3,10 +3,10 @@ import ListItem from "@/components/ListItem";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | Competitive Edge Digital",
+  title: "Blog | DevVibe Studio",
   description: "Read our blog for tips and tricks on how to grow your business with web design, development and Google SEO.",
   alternates: {
-    canonical: 'https://www.competitiveedgedigital.com/blog',
+    canonical: 'https://www.devvibestudio.com/blog',
   }
 }
 

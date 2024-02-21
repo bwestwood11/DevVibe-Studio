@@ -5,10 +5,10 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Website Development | Competitive Edge Marketing",
+  title: "Website Development | DevVibe Studio",
   description: 'Creating the best websites that are optimized for search engines and are mobile friendly.',
   alternates: {
-    canonical: 'https://www.competitiveedgedigital.com/website-development',
+    canonical: 'https://www.devvibestudio.com/website-development',
   }
 }
 

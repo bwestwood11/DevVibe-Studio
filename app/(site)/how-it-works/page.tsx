@@ -6,11 +6,11 @@ import { AiFillCaretRight } from "react-icons/ai";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How It Works | Competitive Edge Digital",
+  title: "How It Works | DevVibe Studio",
   description:
     "Here's how we work. We will discuss your business and your goals. We will give you recommendations based on our experience and expertise.",
   alternates: {
-    canonical: "https://www.competitiveedgedigital.com/how-it-works",
+    canonical: "https://www.devvibestudio.com/how-it-works",
   },
 };
 

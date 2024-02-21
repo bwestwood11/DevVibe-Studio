@@ -43,8 +43,8 @@ export function NavigationMenuItems() {
   return (
     <NavigationMenu className="z-[100]">
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <Link href="/" legacyBehavior passHref>
+        <NavigationMenuItem className="hidden lg:block">
+          <Link href="/" legacyBehavior passHref >
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Home
             </NavigationMenuLink>

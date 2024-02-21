@@ -4,10 +4,10 @@ import Projects from "@/components/Projects";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: 'Portfolio | Competitive Edge Digital',
+    title: 'Portfolio | DevVibe Studio',
     description: 'Portfolio of websites we have built for our clients.',
     alternates: {
-      canonical: 'https://www.competitiveedgedigital.com/portfolio',
+      canonical: 'https://www.devvibestudio.com/portfolio',
       }
     }
 

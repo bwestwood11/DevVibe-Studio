@@ -4,10 +4,10 @@ import { CheckIcon } from "@heroicons/react/20/solid";
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Local Google SEO | Competitive Edge Marketing",
+  title: "Local Google SEO | DevVibe Studio",
   description: 'Optimize your website with the best Google SEO practices to rank higher on Google.',
   alternates: {
-    canonical: 'https://www.competitiveedgedigital.com/google-seo',
+    canonical: 'https://www.devvibestudio.com/google-seo',
   }
 }
 

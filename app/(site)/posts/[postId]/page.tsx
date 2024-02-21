@@ -45,7 +45,7 @@ export async function generateMetadata({ params: { postId } }: Props) {
     title: post.meta.title,
     description: post.meta.description,
     alternates: {
-      canonical: `https://www.competitiveedgedigital.com/posts/${postId}`
+      canonical: `https://www.devvibestudio.com/posts/${postId}`
     }
   };
 }

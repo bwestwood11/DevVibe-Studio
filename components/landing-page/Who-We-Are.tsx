@@ -10,7 +10,7 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 const WhoWeAre = () => {
   return (
     <div className='w-full bg-[#F3F4F6] lg:py-28 py-20'>
-        <div className='max-w-7xl mx-auto flex flex-col px-4 sm:px-0 gap-6 sm:gap-0 md:flex-row'>
+        <div className='max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-0 gap-6 sm:gap-0 md:flex-row'>
                   <motion.div
                   initial={{opacity: 0, x: -100}}
                   transition={{duration: 1}}

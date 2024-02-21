@@ -10,10 +10,10 @@ import blob1 from "@/public/blob1.png";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Appliance Plug YouTube Case Study | Competitive Edge Marketing",
+  title: "Appliance Plug YouTube Case Study | DevVibe Studio",
   description: 'Case study of the Appliance Plug YouTube channel.',
   alternates: {
-    canonical: 'https://www.competitiveedgedigital.com/portfolio/appliance-plug-youtube-channel',
+    canonical: 'https://www.devvibestudio.com/portfolio/appliance-plug-youtube-channel',
   }
 }
 

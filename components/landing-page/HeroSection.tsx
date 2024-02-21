@@ -38,7 +38,7 @@ const HeroSection = () => {
           className= "basis-1/2 flex flex-col gap-8 z-10"
         >
           <div className="flex flex-col">
-            <Badge className="w-1/2 md:w-2/5 lg:2/6 xl:w-1/4 whitespace-nowrap bg-gradient-to-r from-orange-300 via-orange-400 to-orange-600 mb-2">
+            <Badge className="w-fit whitespace-nowrap bg-gradient-to-r from-orange-600 via-orange-400 to-orange-300 mb-2">
               {" "}
               Premium Services
             </Badge>

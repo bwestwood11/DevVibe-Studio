@@ -44,7 +44,7 @@ const Navbar = () => {
         )}
       >
         <Link href="/">
-          <Image src="/marketinglogo.png" alt="logo" width={180} height={160} />
+          <Image src="/devvibe-studio-logo.png" alt="logo" width={180} height={160} />
         </Link>
         <div className="flex flex-row gap-8">
           <NavigationMenuItems />
@@ -59,7 +59,12 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <nav className="w-full h-[90px] flex items-center sm:hidden z-[100] justify-between px-5">
         <Link href="/">
-          <Image src="/marketinglogo.png" alt="logo" width={200} height={200} />
+          <Image
+            src="/devvibe-studio-logo.png"
+            alt="logo"
+            width={150}
+            height={150}
+          />
         </Link>
         <GiHamburgerMenu
           onClick={() => setShowMenu(true)}
@@ -72,7 +77,7 @@ const Navbar = () => {
               className="absolute top-10 right-10 text-3xl text-black ml-auto transition-shadow"
             />
             <ul className="flex flex-col text-black text-center font-semibold gap-6 cursor-pointer">
-              <Link href="/">
+              <Link href="/" >
                 <li onClick={() => setShowMenu(false)}>Home</li>
               </Link>
 

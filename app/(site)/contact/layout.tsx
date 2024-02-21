@@ -1,10 +1,10 @@
 import { Metadata } from "next";
 
 export const metadata = {
-    title: "Contact Us | Competitive Edge Digital",
+    title: "Contact Us | DevVibe Studio",
     description: "Contact Us Section for Website Design, Development, and SEO Services",
     alternates: {
-        canonical: "https://www.competitiveedgedigital.com/contact"
+        canonical: "https://www.devvibestudio.com/contact"
     }
   };
   

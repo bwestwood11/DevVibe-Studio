@@ -5,11 +5,11 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About Us | Competitive Edge Digital Agency",
+  title: "About Us | DevVibe Studio",
   description:
     "We are a marketing agency that specializes in web design, web development and Google SEO.",
   alternates: {
-    canonical: "https://www.competitiveedgedigital.com/about",
+    canonical: "https://www.devvibestudio.com/about",
   },
 };
 
