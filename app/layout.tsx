@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import ToastProvider from "@/components/ToastProvider";
 import Script from "next/script";
-import { sourceSans3 } from "./fonts";
+import dynamic from 'next/dynamic'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +19,8 @@ export const metadata: Metadata = {
   },
 };
 
+const ChatbotComponent = dynamic(() => import('@/components/chatbot'), { ssr: false })
+
 export default function RootLayout({
   children,
 }: {
@@ -29,7 +31,7 @@ export default function RootLayout({
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body className={inter.className}>
         {/* Script Tag that allows for the AI voice chat bot from VoiceFlow */}
-        <Script
+        {/* <Script
           type="text/javascript"
           dangerouslySetInnerHTML={{
             __html: `(function(d, t) {
@@ -44,7 +46,8 @@ export default function RootLayout({
             v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
         })(document, 'script')`,
           }}
-        ></Script>
+        ></Script>  */}
+        <ChatbotComponent />
         <ToastProvider />
         <Navbar />
         {children}

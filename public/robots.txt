@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.competitiveedgedigital.com
+Host: https://www.devvibestudio.com
 
 # Sitemaps
-Sitemap: https://www.competitiveedgedigital.com/sitemap.xml
+Sitemap: https://www.devvibestudio.com/sitemap.xml
