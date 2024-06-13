@@ -7,16 +7,18 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import ToastProvider from "@/components/ToastProvider";
 import Script from "next/script";
 import dynamic from 'next/dynamic'
+import { SeoMetadata } from "@/constants/seo";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "DevVibe Studio | Web Design | Web Development",
-  description:
-    "Creative agency specializing in Web Design, Web Development and Content Creation",
-  alternates: {
-    canonical: "https://www.devvibestudio.com",
+  ...SeoMetadata,
+  title: {
+    template: '%s | DevVibe Studio',
+    default: 'DevVibe Studio',
   },
+  metadataBase: new URL(process.env.SITE_URL!),
+  description: 'Creative agency specializing in Web Design, Web Development and Content Creation'
 };
 
 const ChatbotComponent = dynamic(() => import('@/components/chatbot'), { ssr: false })
