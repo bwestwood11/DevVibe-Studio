@@ -29,26 +29,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="max-w-[100vw] overflow-x-hidden">
       <GoogleAnalytics GA_TRACKING_ID={process.env.GA_TRACKING_ID} />
       <body className={inter.className}>
-        {/* Script Tag that allows for the AI voice chat bot from VoiceFlow */}
-        {/* <Script
-          type="text/javascript"
-          dangerouslySetInnerHTML={{
-            __html: `(function(d, t) {
-            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
-            v.onload = function() {
-              window.voiceflow.chat.load({
-                verify: { projectID: '655e9a9073f76b00076ed256' },
-                url: 'https://general-runtime.voiceflow.com',
-                versionID: 'production'
-              });
-            }
-            v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
-        })(document, 'script')`,
-          }}
-        ></Script>  */}
         <ChatbotComponent />
         <ToastProvider />
         <Navbar />
