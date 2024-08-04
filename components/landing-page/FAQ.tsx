@@ -8,15 +8,11 @@ import {
 const FAQ = () => {
   return (
     <main className="w-full bg-[#F3F4F6] px-4 pt-20 sm:py-20 text-left flex">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-5xl mx-auto w-full px-9">
         <h2 className="font-bold text-2xl tracking-tight mb-8">
           Frequently Asked Questions
         </h2>
-        <Accordion
-          className="w-full text-gray-900 max-w-4xl"
-          type="single"
-          collapsible
-        >
+        <Accordion className="w-full text-gray-900  " type="single" collapsible>
           <AccordionItem value="item-1">
             <AccordionTrigger>What are the payment options?</AccordionTrigger>
             <AccordionContent>

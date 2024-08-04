@@ -11,6 +11,8 @@ import { AiFillInstagram } from "react-icons/ai";
 import { RiFacebookBoxFill } from "react-icons/ri";
 import Button from "./Button";
 import { NavigationMenuItems } from "./NavigationMenuItems";
+import { AnimatePresence, motion } from "framer-motion";
+
 
 const sans = Source_Sans_3({ subsets: ["latin"] });
 
@@ -70,8 +72,9 @@ const Navbar = () => {
           onClick={() => setShowMenu(true)}
           className="text-3xl ml-auto z-[100]"
         />
+        <AnimatePresence>
         {showMenu && (
-          <div className="absolute top-0 left-0 w-full h-screen z-[150] bg-white backdrop-blur flex flex-col items-center justify-center">
+          <motion.div initial={{left:"-100%", opacity:0}} animate={{left:0, opacity:1}} exit={{left:"-100%",opacity:0}} className="absolute top-0 w-full h-screen z-[150] bg-white backdrop-blur flex flex-col items-center justify-center">
             <GrClose
               onClick={() => setShowMenu(false)}
               className="absolute top-10 right-10 text-3xl text-black ml-auto transition-shadow"
@@ -112,8 +115,10 @@ const Navbar = () => {
               <AiFillInstagram className="text-3xl mt-8 hover:text-black/70" />
               <RiFacebookBoxFill className="text-3xl mt-8 hover:text-black/70" />
             </div>
-          </div>
-        )}
+          </motion.div>
+        )}   
+        </AnimatePresence>
+       
       </nav>
     </div>
   );

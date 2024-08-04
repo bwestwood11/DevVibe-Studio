@@ -19,7 +19,7 @@ const HeroSection = () => {
       priority
       className="absolute top-0 left-0 opacity-25 h-full w-screen"
       />
-      <div className="max-w-7xl relative mx-auto h-full sm:flex sm:flex-row flex-col md:pt-[88px] pt-[60px] px-5" style={{pointerEvents: 'all'}}>
+      <div className="max-w-7xl relative mx-auto h-full sm:flex lg:flex-row flex-col md:pt-[88px] pt-[60px] px-5" style={{pointerEvents: 'all'}}>
         {/* Blur Effect in background on mobile devices only */}
         <div
           className="absolute block sm:hidden inset-x-0 -top-40 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -73,7 +73,7 @@ const HeroSection = () => {
         </div>
         {/* Right Side of Hero Section */}
         <div
-        className="basis-1/2 min-h-full lg:px-6 flex pt-10 sm:pt-0">
+        className="basis-1/2 min-h-full sm:px-10 lg:px-6 flex pt-10 sm:pt-0">
           <Image
             src="/Brett-Hero-Image.png"
             alt="Hero Image"

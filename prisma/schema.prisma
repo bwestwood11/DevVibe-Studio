@@ -16,6 +16,5 @@ model User {
     lastName String
     email String @unique
     company String
-    phone String
     message String
 }

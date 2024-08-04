@@ -5,6 +5,7 @@ import { BsGiftFill } from "react-icons/bs";
 import { MdMarkEmailRead } from "react-icons/md";
 import { RiVipCrownFill, RiTrophyFill, RiWaterFlashFill } from "react-icons/ri";
 import { motion } from "framer-motion";
+import { MagicCard } from "../magicui/magic-card";
 
 const features = [
   {
@@ -62,9 +63,9 @@ export default function Features() {
                 viewport={{once: true}}
                 transition={{ duration: 0.3, delay: i * 0.2 }}
                 key={feature.name}
-                className="pt-6"
+                className="pt-6 h-full"
               >
-                <div className="flow-root rounded-lg bg-gray-50 px-6 pb-8">
+                <MagicCard gradientColor={"#ea6e0827"} className="flow-root  hover:border-[#ea6e0827] rounded-xxl bg-gray-50 px-6 pb-8 h-full">
                   <div className="-mt-6">
                     <div>
                       <span className="inline-flex items-center justify-center rounded-xl bg-orange-500 p-3 shadow-lg">
@@ -81,7 +82,7 @@ export default function Features() {
                       {feature.description}
                     </p>
                   </div>
-                </div>
+                </MagicCard>
               </motion.div>
             ))}
           </div>

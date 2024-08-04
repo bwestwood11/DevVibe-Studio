@@ -13,7 +13,7 @@ const sans = Source_Sans_3({ subsets: ["latin"] });
 const RecentWork = () => {
   return (
     <div
-      className={`w-full bg-[#F3F4F6] pt-20 pb-40 sm:pb-20 ${sans.className}`}
+      className={`w-full bg-[#F3F4F6] pt-20 pb-40 sm:pb-20  ${sans.className}`}
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-0">
         <div className="text-center mb-16">
@@ -26,7 +26,7 @@ const RecentWork = () => {
           </p>
         </div>
 
-        <div className="w-full mx-auto flex flex-col lg:flex-row md:px-6 pb-16">
+        <div className="w-full mx-auto flex max-md:gap-4 flex-col lg:flex-row md:px-6 pb-16">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
@@ -43,7 +43,7 @@ const RecentWork = () => {
               className="w-full h-full self-end max-w-[400px]"
             />
           </motion.div>
-          <div className="basis-1/2 flex flex-col leading-7 px-10">
+          <div className="basis-1/2 flex flex-col leading-7 md:md:px-10">
             <ShimmerCard
               text="AI Saas Company"
               wrapperClassName="w-fit mb-2"
@@ -84,11 +84,11 @@ const RecentWork = () => {
             </Link>
           </div>
         </div>
-        <div className="w-full mx-auto flex flex-col-reverse lg:flex-row px-6 pb-28">
-          <div className="basis-1/2 flex flex-col leading-7 px-10">
+        <div className="w-full mx-auto flex max-md:gap-4 flex-col-reverse lg:flex-row px-6 pb-28">
+          <div className="basis-1/2  flex flex-col leading-7 md:px-10">
             <ShimmerCard
               text="Learning Platform"
-              wrapperClassName="w-fit mb-2"
+              wrapperClassName="w-fit sm:mb-2 my-4"
               shinyClassName="text-xs"
             />
             <GradualSpacing
@@ -128,7 +128,7 @@ const RecentWork = () => {
             transition={{ duration: 1 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="flex basis-1/2 justify-center w-full h-full"
+            className="flex basis-1/2  justify-center w-full h-full"
           >
             {" "}
             <Image
@@ -141,7 +141,7 @@ const RecentWork = () => {
             />
           </motion.div>
         </div>
-        <div className="w-full mx-auto flex flex-col lg:flex-row px-6">
+        <div className="w-full mx-auto flex max-md:gap-4 flex-col lg:flex-row px-6">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             transition={{ duration: 1 }}
@@ -158,14 +158,14 @@ const RecentWork = () => {
               className="w-full h-full self-end max-w-[400px]"
             />
           </motion.div>
-          <div className="basis-1/2 flex flex-col leading-7 px-10">
+          <div className="basis-1/2 flex flex-col leading-7 md:px-10">
             <ShimmerCard
               text="Local Small Business"
               wrapperClassName="w-fit mb-2"
               shinyClassName="text-xs"
             />
             <GradualSpacing
-              className="font-bold text-3xl text-primary text-left "
+              className="font-bold md:text-3xl text-2xl text-primary text-left"
               text="Competitive Edge Junk Removal"
             />
             <p className="mt-2 text-sm text-foreground/60">

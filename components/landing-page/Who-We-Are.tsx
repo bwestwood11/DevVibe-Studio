@@ -9,8 +9,8 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 
 const WhoWeAre = () => {
   return (
-    <div className='w-full bg-[#F3F4F6] lg:py-28 py-20'>
-        <div className='max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-0 gap-6 sm:gap-0 md:flex-row'>
+    <div className='w-full bg-[#F3F4F6] lg:py-28 py-12'>
+        <div className='max-w-7xl mx-auto flex flex-col items-center px-4 sm:px-0 gap-6 sm:gap-0 lg:flex-row'>
                   <motion.div
                   initial={{opacity: 0, x: -100}}
                   transition={{duration: 1}}
@@ -45,7 +45,7 @@ const WhoWeAre = () => {
                                 />
                                 <div>
                                   <h3 className='text-xl font-bold'>Website Design</h3>
-                                  <p className='text-gray-600 tracking-wide leading-7'>Designing an optimized converting website is our bread and butter.</p>
+                                  <p className='text-gray-600 tracking-wide leading-7 max-w-[45ch]'>Designing an optimized converting website is our bread and butter.</p>
                                 </div>
                             </div>
                             <div className='flex flex-row gap-5 items-center'>
@@ -57,7 +57,7 @@ const WhoWeAre = () => {
                                 />
                                  <div>
                                   <h3 className='text-xl font-bold'>Website Development</h3>
-                                  <p className='text-gray-600 tracking-wide leading-7'>Developing websites with actual code. Not your drag n drop website builders like Wix or SquareSpace.</p>
+                                  <p className='text-gray-600 tracking-wide leading-7 max-w-[45ch]'>Developing websites with actual code. Not your drag n drop website builders like Wix or SquareSpace.</p>
                                 </div>
                             </div>
                         </div>

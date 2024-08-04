@@ -1,6 +1,6 @@
-import FAQ from "@/components/FAQ";
+import FAQ from "@/components/landing-page/FAQ";
 import Features from "@/components/landing-page/Features";
-import GoogleReviews from "@/components/landing-page/Google-Reviews";
+import { MarqueeReviews } from "@/components/landing-page/Google-Reviews";
 import HeroSection from "@/components/landing-page/HeroSection";
 import LogoClouds from "@/components/landing-page/SkillSection";
 import WhoWeAre from "@/components/landing-page/Who-We-Are";
@@ -15,8 +15,8 @@ export default function Home() {
       <LogoClouds />
       <HowWeWork />
       <WhoWeAre />
-      <GoogleReviews />
-      <RecentWork />
+      <RecentWork /> 
+      <MarqueeReviews />
       <VideoTestimonial />
       <Features />
       <FAQ />

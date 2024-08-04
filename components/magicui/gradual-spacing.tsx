@@ -24,7 +24,9 @@ export default function GradualSpacing({
 
 }: GradualSpacingProps) {
   return (
-    <div className="flex">
+    <>
+    <h3 className={cn("md:hidden", className,)}>{text}</h3>
+    <div className=" hidden sm:flex">
       <AnimatePresence>
         {text.split("").map((char, i) => (
           <motion.h3
@@ -42,5 +44,6 @@ export default function GradualSpacing({
         ))}
       </AnimatePresence>
     </div>
+    </>
   );
 }
