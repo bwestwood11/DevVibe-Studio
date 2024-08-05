@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "About Us | DevVibe Studio",
+  title: "About Us",
   description:
     "We are a marketing agency that specializes in web design, web development and Google SEO.",
   alternates: {

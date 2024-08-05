@@ -10,7 +10,7 @@ import VideoTestimonial from "@/components/landing-page/Video-Testimonial";
 
 export default function Home() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <HeroSection />
       <LogoClouds />
       <HowWeWork />

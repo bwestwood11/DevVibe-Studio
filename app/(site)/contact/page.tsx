@@ -170,7 +170,7 @@ export default function ContactPage() {
             />
             <figure className="mt-10">
               <blockquote className="text-lg font-semibold leading-8 text-gray-900">
-                <p>“”</p>
+                <p>“We pride ourselves in quality work & integrity with every website we develop.”</p>
               </blockquote>
               <figcaption className="mt-10 flex gap-x-6">
                 <img

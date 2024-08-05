@@ -13,11 +13,15 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import {AiFillYoutube, AiOutlineDiff} from 'react-icons/ai'
+import {AiFillFileText, AiFillYoutube, AiOutlineDiff} from 'react-icons/ai'
+import { IconType } from "react-icons/lib";
+import { MdKeyboardVoice } from "react-icons/md";
+import { FaVideo } from "react-icons/fa";
+import { RiRobotFill } from "react-icons/ri";
 
-const components: { title: string; href: string; icon: string;  description: string }[] = [
+const caseStudies: { title: string; href: string; icon: IconType;  description: string }[] = [
   {
-    title: "The Appliance Plug",
+    title: "ChatBuild.io",
     href: "/portfolio/appliance-plug-youtube-channel",
     icon: AiFillYoutube,
     description:
@@ -60,24 +64,66 @@ export function NavigationMenuItems() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Services</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <ListItem
-                href="/website-design"
-                title="Web Design"
-              >
-                Professional designing and layout of your website for best user
-                experience.
-              </ListItem>
-              <ListItem href="/AI-chatbots" title="AI Chatbots">
-                Your own custom AI assistant that is trained on your business.
-              </ListItem>
-              <ListItem href="/website-development" title="Web Development">
-                Coding your website from scratch to ensure the best performance.
-              </ListItem>
-              <ListItem href="/google-seo" title="Google SEO">
-                Ranking your website on Google to get more traffic and sales.
-              </ListItem>
-            </ul>
+          <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                    <li className="row-span-3">
+                      <NavigationMenuLink asChild>
+                        <a
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                          href="/"
+                        >
+                          {/* <Icons.logo className="h-6 w-6" /> */}
+                          <div className="mb-2 mt-4 text-lg font-medium">
+                            Voice Fusion
+                          </div>
+                          <p className="text-sm leading-tight text-muted-foreground">
+                            Beautifully designed components built with Radix UI
+                            and Tailwind CSS.
+                          </p>
+                        </a>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <ListItem href="/">
+                        <div className="flex space-x-2 items-center mb-2">
+                          <AiFillFileText className="w-6 h-6 text-white bg-green-500 p-1 rounded-lg" />
+                          <h3 className="font-semibold text-black">
+                            Text to Speech
+                          </h3>
+                        </div>
+                        <p>
+                          Type anything and we will convert it to over 20+
+                          different voices.
+                        </p>
+                      </ListItem>
+                    </li>
+
+                    <li>
+                      <ListItem href="/">
+                        <div className="flex space-x-2 items-center mb-2">
+                          <MdKeyboardVoice className="w-6 h-6 text-white bg-blue-500 p-1 rounded-lg" />
+                          <h3 className="font-semibold text-black">
+                            AI Voices
+                          </h3>
+                        </div>
+                        <p>
+                          Utilize the power of AI to generate voices that sound like real people.
+                        </p>
+                      </ListItem>
+                    </li>
+                    <li>
+                      <ListItem href="/">
+                        <div className="flex space-x-2 items-center mb-2">
+                          <FaVideo className="w-6 h-6 text-white bg-orange-500 p-1 rounded-lg" />
+                          <h3 className="font-semibold text-black">
+                            Video Editor
+                          </h3>
+                        </div>
+                        <p>
+                          Utilize the power of AI to generate voices that sound like real people.
+                        </p>
+                      </ListItem>
+                    </li>
+                  </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
@@ -90,17 +136,64 @@ export function NavigationMenuItems() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Case Studies</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
-              {components.map((component) => (
-                <ListItem
-                  key={component.title}
-                  title={component.title}
-                  href={component.href}
-                >
-                  {component.description}
-                </ListItem>
-              ))}
-            </ul>
+          <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                    <li className="row-span-3">
+                      <NavigationMenuLink asChild>
+                        <a
+                          className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/90 to-muted p-6 no-underline outline-none focus:shadow-md"
+                          href="/"
+                        >
+                          {/* <Icons.logo className="h-6 w-6" /> */}
+                          <div className="mb-2 mt-4 text-lg font-medium">
+                            DevVibe Studio
+                          </div>
+                          <p className="text-sm leading-tight text-muted-foreground">
+                            Beautifully designed websites that convert and rank on Google.
+                          </p>
+                        </a>
+                      </NavigationMenuLink>
+                    </li>
+                    <li>
+                      <ListItem href="/">
+                        <div className="flex space-x-2 items-center mb-2">
+                          <RiRobotFill className="w-6 h-6 text-white bg-green-500 p-1 rounded-lg" />
+                          <h3 className="font-semibold text-foreground">
+                            ChatBuild.io
+                          </h3>
+                        </div>
+                        <p className="text-foreground/70 text-xs">
+                          An AI SaaS Company that used our help to build out it's software functionality and design. 
+                        </p>
+                      </ListItem>
+                    </li>
+
+                    <li>
+                      <ListItem href="/">
+                        <div className="flex space-x-2 items-center mb-2">
+                          <MdKeyboardVoice className="w-6 h-6 text-white bg-blue-500 p-1 rounded-lg" />
+                          <h3 className="font-semibold text-black">
+                            StudyGen AI
+                          </h3>
+                        </div>
+                        <p className="text-foreground/70 text-xs">
+                          An AI Learning Platform that used our help to build out it's software functionality and design.
+                        </p>
+                      </ListItem>
+                    </li>
+                    <li>
+                      <ListItem href="/">
+                        <div className="flex space-x-2 items-center mb-2">
+                          <FaVideo className="w-6 h-6 text-white bg-orange-500 p-1 rounded-lg" />
+                          <h3 className="font-semibold text-black">
+                            Competitive Edge Junk Removal
+                          </h3>
+                        </div>
+                        <p className="text-foreground/70 text-xs">
+                          Local small business that used our help to create a high converting website.
+                        </p>
+                      </ListItem>
+                    </li>
+                  </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
       </NavigationMenuList>

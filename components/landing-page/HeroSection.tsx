@@ -43,7 +43,7 @@ const HeroSection = () => {
               {" "}
               Premium Services
             </Badge>
-            <h1 className={montserrat.className}>
+            <h1 className={cn(montserrat.className, "text-4xl sm:text-5xl font-extrabold")}>
               An Agency That Specializes
               <br />
               <Typed
