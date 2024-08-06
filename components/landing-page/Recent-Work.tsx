@@ -12,7 +12,7 @@ const sans = Source_Sans_3({ subsets: ["latin"] });
 
 const RecentWork = () => {
   return (
-    <div
+    <div id="recent-work"
       className={`w-full bg-[#F3F4F6] pt-20 pb-40 sm:pb-20  ${sans.className}`}
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-0">

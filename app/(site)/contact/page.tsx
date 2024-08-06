@@ -1,29 +1,40 @@
 "use client";
 
-import { FormEvent } from "react";
+import { FormEvent, useState } from "react";
 import { toast } from "sonner";
 
 export default function ContactPage() {
+  const [isLoading, setIsLoading] = useState(false);
   const onHandleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.currentTarget);
-    const firstName = formData.get("first-name");
-    const lastName = formData.get("last-name");
-    const email = formData.get("email");
-    const company = formData.get("company");
-    const message = formData.get("message");
+    try {
+      e.preventDefault();
+      setIsLoading(true);
+      const formData = new FormData(e.currentTarget);
+      const firstName = formData.get("first-name");
+      const lastName = formData.get("last-name");
+      const email = formData.get("email");
+      const company = formData.get("company");
+      const message = formData.get("message");
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ firstName, lastName, email, company, message }),
-    });
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ firstName, lastName, email, company, message }),
+      });
 
-    if (response.ok) {
-      toast.success("Message sent successfully! We will get back to you soon.");
-    } else {
+      if (response.ok) {
+        toast.success(
+          "Message sent successfully! We will get back to you soon."
+        );
+        setIsLoading(false);
+      } else {
+        toast.error("Something went wrong!");
+        setIsLoading(false);
+      }
+    } catch (error) {
+      setIsLoading(false);
       toast.error("Something went wrong!");
     }
   };
@@ -156,9 +167,10 @@ export default function ContactPage() {
             <div className="mt-10">
               <button
                 type="submit"
+                disabled={isLoading}
                 className="block w-full rounded-md bg-orange-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-orange-500/60 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Let&apos;s talk
+                {isLoading ? "Sending Message" : "Let's talk"}
               </button>
             </div>
           </form>
@@ -170,7 +182,10 @@ export default function ContactPage() {
             />
             <figure className="mt-10">
               <blockquote className="text-lg font-semibold leading-8 text-gray-900">
-                <p>“We pride ourselves in quality work & integrity with every website we develop.”</p>
+                <p>
+                  “We pride ourselves in quality work & integrity with every
+                  website we develop.”
+                </p>
               </blockquote>
               <figcaption className="mt-10 flex gap-x-6">
                 <img

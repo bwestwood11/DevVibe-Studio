@@ -13,7 +13,6 @@ import Button from "./Button";
 import { NavigationMenuItems } from "./NavigationMenuItems";
 import { AnimatePresence, motion } from "framer-motion";
 
-
 const sans = Source_Sans_3({ subsets: ["latin"] });
 
 const Navbar = () => {
@@ -46,13 +45,18 @@ const Navbar = () => {
         )}
       >
         <Link href="/">
-          <Image src="/devvibe-studio-logo.png" alt="logo" width={180} height={160} />
+          <Image
+            src="/devvibe-studio-logo.png"
+            alt="logo"
+            width={180}
+            height={160}
+          />
         </Link>
         <div className="flex flex-row gap-8">
           <NavigationMenuItems />
 
           <div className="hidden lg:block">
-            <Link href="/how-it-works">
+            <Link href="/">
               <Button />
             </Link>
           </div>
@@ -73,52 +77,56 @@ const Navbar = () => {
           className="text-3xl ml-auto z-[100]"
         />
         <AnimatePresence>
-        {showMenu && (
-          <motion.div initial={{left:"-100%", opacity:0}} animate={{left:0, opacity:1}} exit={{left:"-100%",opacity:0}} className="absolute top-0 w-full h-screen z-[150] bg-white backdrop-blur flex flex-col items-center justify-center">
-            <GrClose
-              onClick={() => setShowMenu(false)}
-              className="absolute top-10 right-10 text-3xl text-black ml-auto transition-shadow"
-            />
-            <ul className="flex flex-col text-black text-center font-semibold gap-6 cursor-pointer">
-              <Link href="/" >
-                <li onClick={() => setShowMenu(false)}>Home</li>
-              </Link>
-
-              <Link href="/services">
-                <li onClick={() => setShowMenu(false)}>Services</li>
-              </Link>
-              <Link href="/portfolio">
-                <li onClick={() => setShowMenu(false)}>Portfolio</li>
-              </Link>
-              <Link href="/about">
-                <li onClick={() => setShowMenu(false)}>About Us</li>
-              </Link>
-              <Link href="/how-it-works">
-                <li onClick={() => setShowMenu(false)}>How It Works</li>
-              </Link>
-              <Link href="/contact">
-                <li onClick={() => setShowMenu(false)}>Contact Us</li>
-              </Link>
-              <Link href="/blog">
-                <li onClick={() => setShowMenu(false)}>Blog</li>
-              </Link>
-            </ul>
-            <Link href="/contact">
-              <button
+          {showMenu && (
+            <motion.div
+              initial={{ left: "-100%", opacity: 0 }}
+              animate={{ left: 0, opacity: 1 }}
+              exit={{ left: "-100%", opacity: 0 }}
+              className="absolute top-0 w-full h-screen z-[150] bg-white backdrop-blur flex flex-col items-center justify-center"
+            >
+              <GrClose
                 onClick={() => setShowMenu(false)}
-                className="font-semibold text-white bg-orange-500 p-2 mt-8 rounded-md"
-              >
-                Contact Us
-              </button>
-            </Link>
-            <div className="flex flex-row gap-4 mt-8">
-              <AiFillInstagram className="text-3xl mt-8 hover:text-black/70" />
-              <RiFacebookBoxFill className="text-3xl mt-8 hover:text-black/70" />
-            </div>
-          </motion.div>
-        )}   
+                className="absolute top-10 right-10 text-3xl text-black ml-auto transition-shadow"
+              />
+              <ul className="flex flex-col text-black text-center font-semibold gap-6 cursor-pointer">
+                <Link href="/">
+                  <li onClick={() => setShowMenu(false)}>Home</li>
+                </Link>
+
+                {/* <Link href="/services">
+                <li onClick={() => setShowMenu(false)}>Services</li>
+              </Link> */}
+                {/* <Link href="/portfolio">
+                  <li onClick={() => setShowMenu(false)}>Portfolio</li>
+                </Link>
+                <Link href="/about">
+                  <li onClick={() => setShowMenu(false)}>About Us</li>
+                </Link>
+                <Link href="/how-it-works">
+                  <li onClick={() => setShowMenu(false)}>How It Works</li>
+                </Link> */}
+                <Link href="/contact">
+                  <li onClick={() => setShowMenu(false)}>Contact Us</li>
+                </Link>
+                <Link href="/blog">
+                  <li onClick={() => setShowMenu(false)}>Blog</li>
+                </Link>
+              </ul>
+              <Link href="/contact">
+                <button
+                  onClick={() => setShowMenu(false)}
+                  className="font-semibold text-white bg-orange-500 p-2 mt-8 rounded-md"
+                >
+                  Contact Us
+                </button>
+              </Link>
+              <div className="flex flex-row gap-4 mt-8">
+                <AiFillInstagram className="text-3xl mt-8 hover:text-black/70" />
+                <RiFacebookBoxFill className="text-3xl mt-8 hover:text-black/70" />
+              </div>
+            </motion.div>
+          )}
         </AnimatePresence>
-       
       </nav>
     </div>
   );

@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { PrismaClient } from "@prisma/client";
 import { sendEmail } from "@/lib/mail";
+import { WelcomeEmail } from "@/emails/welcome-email";
+import NewUserEmail from "@/emails/new-contact-created-email";
 
 const prisma = new PrismaClient();
 
@@ -22,28 +24,19 @@ export async function POST(request: Request) {
     },
   });
 
-  const newContactHtml = `
-    Hi Brett,\n
-    You Have New Message from ${firstName} ${lastName} \n\n
-
-    =========== Details =============\n
-    Name: ${firstName} ${lastName}\n
-    Email: ${email}\n
-    Company: ${company}\n
-    Message: ${message}\n
-    `;
-
-  const userHtml = `
-    Hi ${firstName},\n\n
-
-    Thank you for reaching out! We will get back to you soon.\n\n
-
-    Best,\n
-
-    DevVibe Studio\n
-    `;
+  const html = WelcomeEmail({
+    userFirstName: firstName,
+    userLastName: lastName,
+  });
+  const newContactHtml = NewUserEmail({
+    userFirstName: firstName,
+    userLastName: lastName,
+    userEmail: email,
+    userCompany: company,
+    userMessage: message,
+  });
   await Promise.all([
-    sendEmail(email, userHtml, "Thank you for reaching out!"),
+    sendEmail(email, html, "Thank you for reaching out!"),
     sendEmail(
       "dabrettwestwood@gmail.com",
       newContactHtml,
