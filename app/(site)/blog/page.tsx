@@ -1,36 +1,76 @@
-import { getPostsMeta } from "@/lib/posts";
-import ListItem from "@/components/ListItem";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import "./blog-styles.css";
+import { categories, getBlogByCategory, loadingVariants } from "@/lib/blog";
+import { MotionDiv } from "@/components/blog/motion";
+import CardComponent from "./[slug]/_components/Card";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | DevVibe Studio",
-  description: "Read our blog for tips and tricks on how to grow your business with web design, development and Google SEO.",
+  title: "Blog",
+  description: "Latest news and updates from Chatbuild AI.",
   alternates: {
-    canonical: 'https://www.devvibestudio.com/blog',
-  }
-}
+    canonical: `${process.env.SITE_URL}/blog`,
+  },
+};
 
-export const revalidate = 10;
-
-const Posts = async () => {
-    const posts = await getPostsMeta();
-
-    if(!posts) {
-        return <p>Sorry, no posts are available.</p>
-    }
+export default function Blog() {
   return (
-    <section className="w-full bg-[#F3F4F6]">
-        <div className="pt-24 mx-auto max-w-[1280px]">
-    <h2 className="text-4xl font-bold text-center pb-12">Our Blog</h2>
-    <ul className="w-full grid grid-cols-1 md:grid-cols-2 px-10 gap-10 gap-y-16 pb-24">
-    {posts.map(post => (
-      <ListItem key={post.id} post={post} />
-    ))} 
-    </ul>
-</div>
-    </section>
-  
-  )
+    <div className="mx-auto container px-5 xl:px-20  py-8">
+      <Tabs defaultValue={categories[0]}>
+        <section className=" py-10">
+          <h1 className="text-left text-3xl font-black">Posts</h1>
+          <p className=" text-gray-600 mb-10">
+            Latest news, updates and helpful articles from DevVibe Studio.
+          </p>
+          <TabsList>
+            {categories.map((category) => (
+              <TabsTrigger
+                key={category}
+                value={category}
+                className="capitalize"
+              >
+                {category}
+              </TabsTrigger>
+            ))}
+          </TabsList>
+        </section>
+        {categories.map((category) => (
+          <TabsContent value={category} key={category}>
+            <PostsGrid category={category} />
+          </TabsContent>
+        ))}
+      </Tabs>
+    </div>
+  );
 }
 
-export default Posts;
+const PostsGrid = ({ category }: { category: categories }) => {
+  const posts = getBlogByCategory(category);
+
+  if (posts.length <= 0) {
+    return (
+      <div className="post-grid">
+        <MotionDiv
+          initial="initial"
+          animate="animate"
+          exit="exit"
+          variants={loadingVariants}
+          className="flex flex-col items-center justify-center py-20 "
+        >
+          <h1 className="text-left text-3xl font-black">No posts found</h1>
+          <p className=" text-gray-600 mb-4">
+            Latest news and updates and Help from Chatbuild Ai
+          </p>
+        </MotionDiv>
+      </div>
+    );
+  }
+
+  return (
+    <div className="post-grid">
+      {posts.map((blog, index) => (
+        <CardComponent index={index} key={blog.slug} blog={blog} />
+      ))}
+    </div>
+  );
+};
