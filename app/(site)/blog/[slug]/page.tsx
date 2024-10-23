@@ -20,6 +20,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import ProgressBar from "./_components/Progress-Bar";
 import { posts } from "@/.velite";
+import BreadCrumb from "./_components/bread-crumb";
 
 type Props = {
   params: {
@@ -31,14 +32,18 @@ function getPageBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);
 }
 
-
 export default function Post({ params }: { params: { slug: string } }) {
   const blog = getPageBySlug(params.slug);
   if (!blog) notFound();
   return (
     <div className="flex mx-auto max-w-7xl px-16 max-md:px-8 py-8 scroll-m-10 w-full   ">
       <ProgressBar />
+
       <article className="mx-auto flex-1  max-w-3xl w-full flex flex-col gap-3  ">
+      <div className="py-8">
+        <BreadCrumb title={blog.title} />
+      </div>
+        
         <div className="mb-4 text-left text-foreground">
           <time dateTime={blog.date} className="mb-1 text-xs text-gray-600">
             {FormatTime(blog.date)}
@@ -86,19 +91,20 @@ export default function Post({ params }: { params: { slug: string } }) {
           exit="exit"
           variants={loadingVariants}
           className=" w-full block mb-3 h-auto relative bg-foreground"
-        >
-        </MotionDiv>
+        ></MotionDiv>
         <Mdx code={blog.body} />
         <hr />
         <div className="w-full grid gap-1 place-content-center h-[200px] bg-muted rounded-2xl text-center">
           <p className="text-muted-foreground font-bold text-sm px-2">
-           Receive a FREE website audit on performance, SEO, accessibility, best practices, and PWA.{" "}
+            Receive a FREE website audit on performance, SEO, accessibility,
+            best practices, and PWA.{" "}
           </p>{" "}
           <h2 className="font-black text-xl">DevVibe Studio</h2>
           <Link
             href="/contact"
             className={buttonVariants({
-              className: "w-fit mt-4 mx-auto", variant: "orange"
+              className: "w-fit mt-4 mx-auto",
+              variant: "orange",
             })}
           >
             Try Today
@@ -108,11 +114,7 @@ export default function Post({ params }: { params: { slug: string } }) {
         {blog.tags.length >= 1 && (
           <Separator decorative className="h-0.5 w-full bg-foreground/25" />
         )}
-        <div>
-          {blog.tags?.map((tag) => (
-            <span key={tag}>#{tag}</span>
-          ))}
-        </div>
+        <div>{blog.tags?.map((tag) => <span key={tag}>#{tag}</span>)}</div>
         {/* <Toolbar
           title={blog.title}
           absoluteShareLink={blog.permalink}

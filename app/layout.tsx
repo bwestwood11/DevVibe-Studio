@@ -1,11 +1,10 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter,  } from "next/font/google";
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import ToastProvider from "@/components/ToastProvider";
-import Script from "next/script";
 import dynamic from 'next/dynamic'
 import { SeoMetadata } from "@/constants/seo";
 import { Toaster } from "@/components/ui/sonner";
