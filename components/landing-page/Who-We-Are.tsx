@@ -20,8 +20,8 @@ const WhoWeAre = () => {
                      <Image
                      src='/Hero-Image-2.png'
                         alt='Hero Image'
-                        width={600}
-                        height={600}
+                        width={800}
+                        height={800}
                         />
                   </motion.div>
                   <motion.div

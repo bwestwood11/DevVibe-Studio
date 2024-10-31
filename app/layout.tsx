@@ -15,10 +15,10 @@ export const metadata: Metadata = {
   ...SeoMetadata,
   title: {
     template: '%s | DevVibe Studio',
-    default: 'DevVibe Studio',
+    default: 'DevVibe Studio | Web Design | Web Development',
   },
   metadataBase: new URL(process.env.SITE_URL!),
-  description: 'Creative agency specializing in Web Design, Web Development and Content Creation'
+  description: 'Professional website design and development agency specializing in modern, user-focused web design, custom development, and local SEO strategies to help businesses grow online.'
 };
 
 const ChatbotComponent = dynamic(() => import('@/components/chatbot'), { ssr: false })
